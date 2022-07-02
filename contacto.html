@@ -7,45 +7,73 @@
 	<title>
 		Contacto
 	</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
 
 <body class="contenedorgridcont">
+<nav id="nav" class="navbar navbar-expand-md">
+  <div class="container-fluid ">
+     <!-- este es el boton mcdonald -->
+    <a  href="index.html"><img  src="img/nnnn.png" alt= "logo de marilyn manson"> </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse j" id="navbarNav">
+      <ul >
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.html">HOME</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="discografia.html">DISCOGRAFIA</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="galeria.html">GALERIA</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="tour.html">TOUR</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contacto.html">CONTACTO</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-	<nav id="nav"> 
-		<div>
-			<ul>
-				<a href="index.html">
-					<img  src="img/nnnn.png" alt= "logo de marilyn manson"> 
-				</a>
-				<li>
-					<a href="index.html">HOME</a>	
-				</li>
 
-				<li>
-					<a href="discografia.html">DISCOGRAFIA</a>	
-				</li>
 
-				<li>
-					<a href="galeria.html">GALERIA</a>	
-				</li>
-
-				<li>
-					<a href="tour.html">TOUR</a>	
-					</ li>
-
-					<li>
-						<a href="contacto.html">CONTACTOS</a>	
-					</li>
-				</ul>
-			</div>
-		</nav>
-		<header  id="header" class="imgnuev"> 
-			<img class="log" src=" img/banner.jpg">	
+		<header  id="header" > 
+			<img  src="img/marilyn-manson.gif">	
 		</header>
-		<!-- FIN DEL HEADER (UNA IMAGEN)---->
-		<main id="main" class=" semigrande flex2">
+	<main class="text-colorwhite semigrande"><!-- FIN DEL HEADER (UNA IMAGEN)---->
+<section class="j">
+  <label for="exampleFormControlInput1" class="form-label">Nombre y Apellido</label>
+  <input type="email" class="form-control borra" id="exampleFormControlInput1" placeholder="ingrese su nombre y apellido">
+  <label for="exampleFormControlInput1" class="form-label">Email</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  <label>Localidad:
+						<select name="" id="Localidad">
+							<option value="CABA"> Ciudad de Buenos Aires</option>
+							<option value="Buenos Aires">Buenos Aires</option>
+							<option value="Interior Argentina">Interior de la Argentina</option>
+						</select></label>
+  <label for="exampleFormControlTextarea1" class="form-label">Opiniones Y Sugerencias:</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" ></textarea>
+  <div>
+  Deseo recibir las ultimas noticias de la pagina:
+  <input class="form-check-input mt-0" type="radio" value="" aria-label="Radio button for following text input">
+ 
+	<div class="text-center">
+	<input  type="reset"  class="Boton" value="Cancelar"><input  type="submit" class="Boton" name="Enviar">
+  </div>
+   </section>
+</main>	
+
+
+
+		<!-- <main id="main" class=" semigrande flex2">
 			<section> 
 				<form  action="envio.php">
 					<h1  class="text-center contsug">CONTACTOS Y SUGERENCIAS: 
@@ -76,9 +104,9 @@
 								<input  type="reset"  class="Boton" value="Cancelar"><input  type="submit" class="Boton" name="Enviar">
 
 							</section>
-						</div>
+						</div></main>
 						<!-FIN DE LA SECTION CONTACTO------>
-						</main>
+						
 						<footer id="footer" class="contfo chico" >
 							<h5 class="text-center text-colorwhite animacion">SITIOS OFICIALES</h5>
 							<article>
@@ -87,7 +115,7 @@
 								</a>
 							</article>
 							<article>
-								<a href="https://www.in.com/marilynmanson/?hl=es" target="_blank">
+								<a href="https://www.instagram.com/marilynmanson/?hl=es" target="_blank">
 									<img src="img/in.png">
 								</a>
 							</article>
@@ -103,6 +131,8 @@
 							</article>
 						</footer>
 					</div>
+					<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 				</body>
 
 				</html>
