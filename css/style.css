@@ -364,8 +364,6 @@ background-color:#5B5858}
 @media(min-width:768px)
 {
 	.contenedorgridcont{
-		width:100vw;
-		height: 100vh;
 		grid-template-columns:repeat(2, 1fr);
 		grid-template-rows: auto;
 		grid-template-areas: 
@@ -393,6 +391,8 @@ background-color:#5B5858}
 
 /*media queries tour */
 .contenedorgridtour{
+	width: 100vw;	
+	height: 100vh;
 	display:grid;
 	grid-template-columns:repeat(1, 1fr);
 	grid-template-areas: 
