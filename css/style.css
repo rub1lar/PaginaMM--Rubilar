@@ -79,6 +79,7 @@ background-color: black;
 p { font
 	padding: 1rem 1rem 1rem 1rem;
 }
+/*ACA HAY QUE EDITAR BIEN LA BARRA PARA QUE NO SE COMA LA FOTO,*/
 nav{
 	color: #0d6efd;
 	background-color: #2C2A2A;
@@ -203,6 +204,9 @@ background-color:#5B5858}
 .gif {
 	max-width: auto;
 	align-items: center;
+}
+.imgtour{
+
 }
 }
 .Boton {
@@ -414,7 +418,7 @@ background-color:#5B5858}
 		"main header"
 		"footer footer";
 	}
-	main img{
+	.imgtour{
 		display: none;
 	}
 }
