@@ -15,7 +15,7 @@ PEGAR EL LINK ACA EN CSS*/
 
 h1{
 	color:#0d6efd;
-	font-family: 'Rubik Wet Paint', cursive;
+font-family: 'Roboto', sans-serif;
 	font-weight:200;
 }
 h2, h3{
@@ -51,12 +51,11 @@ html {
 }
 
 nav ul li a {
+	font-family: 'Roboto', sans-serif;
 	display: flex;
 	align-items: center;
 	color: #D9DBDE;
 	text-decoration: none;
-	font-family: 'Rubik Wet Paint', cursive;
-	/*font-size: 140%;PREGUNTAR*/
 	font-size: 2rem;
 	align-content: center;
 	filter: brightness(80%);
@@ -73,14 +72,13 @@ header img{
 
 }
 
-body {
+body { min-height: 100vh; 
 background-color: black;
 }
 
 p { font
 	padding: 1rem 1rem 1rem 1rem;
 }
-/*ACA HAY QUE EDITAR BIEN LA BARRA PARA QUE NO SE COMA LA FOTO,*/
 nav{
 	color: #0d6efd;
 	background-color: #2C2A2A;
