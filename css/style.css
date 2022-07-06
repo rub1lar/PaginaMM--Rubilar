@@ -414,6 +414,9 @@ background-color:#5B5858}
 		"main header"
 		"footer footer";
 	}
+	main img{
+		display: none;
+	}
 }
 
 /*media queries 1024 tour*/
