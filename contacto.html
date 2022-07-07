@@ -13,7 +13,7 @@
 </head>
 
 <body class="contenedorgridcont">
-<nav id="nav" class="navbar navbar-expand-md">
+<nav id="nav" class="navbar navbar-expand-md fx ">
   <div class="container-fluid ">
      <!-- este es el boton mcdonald -->
     <a  href="index.html"><img  src="img/nnnn.png" alt= "logo de marilyn manson"> </a>
@@ -45,67 +45,46 @@
 
 
 		<header  id="header" > 
-			<img  src="img/marilyn-manson.gif">	
+			<img  class="paddingto" src="img/marilyn-manson.gif">	
 		</header>
-	<main class="text-colorwhite semigrande j">
-  <label for="exampleFormControlInput1" class="form-label p-2">Nombre y Apellido</label>
-  <input type="email" class="form-control borra brd" id="exampleFormControlInput1" placeholder="ingrese su nombre y apellido">
-  <label for="exampleFormControlInput1" class="form-label p-2">Email</label>
-  <input type="email" class="form-control brd" id="exampleFormControlInput1" placeholder="name@example.com">
-  <label class="p-4 brd">Localidad:
-						<select name="" id="Localidad">
-							<option value="CABA"> Ciudad de Buenos Aires</option>
-							<option value="Buenos Aires">Buenos Aires</option>
-							<option value="Interior Argentina">Interior de la Argentina</option>
-	
-				</select></label>
-  <div>		
-  <label for="exampleFormControlTextarea1" class="form-label p-2">Opiniones Y Sugerencias:</label>
-  <textarea class="form-control brd" id="exampleFormControlTextarea1" rows="3" ></textarea>
-  </div>
-  <h3 class="p-2">Deseo recibir las ultimas noticias de la pagina:
-  <input class="form-check-input mt-0 " type="radio" value="" aria-label="Radio button for following text input">
-  </h3>
- 
-	<div class="text-center p-3">
-	<input  type="reset"  class="Boton" value="Cancelar"><input  type="submit" class="Boton" name="Enviar">
-  </div>
-</main>	
 
-
-
-		<!-- <main id="main" class=" semigrande flex2">
-			<section> 
-				<form  action="envio.php">
-					<h1  class="text-center contsug">CONTACTOS Y SUGERENCIAS: 
+		<!-- FIN DEL HEADER (UNA IMAGEN)---->
+		<main id="main" class=" semigrande">
+				
+					<form  id="formul" id="form" action="envio.php">
+						<h1  class="text-center paddingto">CONTACTOS Y SUGERENCIAS: 
 					</h1>
-					<label for="">Nombre:</label>
-					<input type="text"  id="Nombre" placeholder="Ingrese su nombre"required>
+							<label for="">Nombre:</label>
+							<input type="text"  id="Nombre" placeholder="Ingrese su nombre"required>
+							
+							<label for="">Apellido:</label>
+							<input type="text" id="Apellido" placeholder="Ingrese su apellido" required>
+							
+							<label for="">Email:</label>
+							<input type="text" id="Email" placeholder="Ingrese su email" required>
+							
+							<label>Localidad:
+								<select name="" id="Localidad">
+									<option value="CABA"> Ciudad de Buenos Aires</option>
+									<option value="Buenos Aires">Buenos Aires</option>
+									<option value="Interior Argentina">Interior de la Argentina</option>
+									<option value="Exterior Argentina">Exterior de la Argentina</option>
+								</select></label>
+								
+								<label for="mensaje">Sugerencias y Opiniones:</label>
+								
+								<textarea name="textarea" rows="5" cols="5"></textarea>
+								
+								<label for="">Deseo recibir las ultimas noticias de la pagina:
+									<input type="checkbox" id=" Deseo recibir las ulimas noticias de la pagina" value="Deseo recibir las ulimas noticias de la pagina"></label>
+								<div class="text-center">
+										<input  type="reset"  class="Boton" value="Cancelar"><input  type="submit" class="Boton" name="Enviar">
+							</div>
+						
+							<!-FIN DE LA SECTION CONTACTO------>
+							</main>
 
-					<label for="">Apellido:</label>
-					<input type="text" id="Apellido" placeholder="Ingrese su apellido" required>
-
-					<label for="">Email:</label>
-					<input type="text" id="Email" placeholder="Ingrese su email" required>
-
-					<label>Localidad:
-						<select name="" id="Localidad">
-							<option value="CABA"> Ciudad de Buenos Aires</option>
-							<option value="Buenos Aires">Buenos Aires</option>
-							<option value="Interior Argentina">Interior de la Argentina</option>
-						</select></label>
-
-						<label for="mensaje">Sugerencias y Opiniones:</label>
-
-						<textarea name="textarea" rows="5" cols="5"></textarea>
-
-						<label for="">Deseo recibir las ultimas noticias de la pagina:
-							<input type="checkbox" id=" Deseo recibir las ulimas noticias de la pagina" value="Deseo recibir las ulimas noticias de la pagina"></label>
-							<div class="text-center">
-								<input  type="reset"  class="Boton" value="Cancelar"><input  type="submit" class="Boton" name="Enviar">
-
-							</section>
-						</div></main>
+						</main>
 						<!-FIN DE LA SECTION CONTACTO------>
 						
 						<footer id="footer" class="contfo" >
