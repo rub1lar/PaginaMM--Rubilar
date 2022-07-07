@@ -69,7 +69,15 @@ label {
 }
 
 input {
-	border-radius:10%;
+	border-radius:40px;
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+
+textarea {
+	margin-left: 1rem;
+	margin-right: 1rem;
+	resize: none;
 }
 header img{ 
 	width: 100%;
@@ -200,6 +208,9 @@ footer {
 	background-image: url(../img/fp.jpg);
 
 }
+.color-red{
+	color: red;
+}
 .fondonegri {
 	background-color:#5B5858}
 /*selector de clase*/
@@ -216,7 +227,8 @@ footer {
 }
 
 }
-.Boton{
+#Boton{
+	/* boton anterior--- 
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 1.4rem;
 	text-decoration: none;
@@ -224,13 +236,13 @@ footer {
 	width: 7Rem;
 	background-color:#8C1212;
 	font-weight: bold;
-	margin-left: 2rem;
+	margin-left: 2rem;*/
 	transition: .3s ease all;
-	border-radius: 5px;
 	filter: brightness(60%);
 
 }
-.Boton:hover{
+
+#Boton:hover{
 	background-color: red;
 	filter: brightness(120%);
 }
@@ -341,10 +353,7 @@ footer {
 	justify-content:center;
 }
 
-#formul{
-	display: flex;
-	flex-direction: column;
-}
+
 #form {
 	display: flex !important;
 	margin-top: 0em;
@@ -404,7 +413,7 @@ footer {
 				height: auto;
 			}
 			.fondotour{
-				background-image: url(../img/fondto.jpg);
+				background-image: url(../img/alter.jpg);
 				background-size: cover;
 			}
 
@@ -544,6 +553,7 @@ form {
 	.imgtour{
 		display: none;
 	}
+
 }
 
 /*media queries 1024 tour*/
