@@ -208,9 +208,7 @@ background-color:#5B5858}
 	max-width: auto;
 	align-items: center;
 }
-.imgtour{
 
-}
 }
 .Boton {
 	font-family: Arial, Helvetica, sans-serif;
@@ -319,9 +317,66 @@ background-color:#5B5858}
 	border-radius: 11.375rem;
 }
 
+.nav-link{
+	font-size: 2rem;
+	padding-bottom: 2rem;
+	color:black;
+	font-size: bold;
+	font-weight: 400;
+	font-family: 'Roboto', sans-serif;
+transition: transform .3s ease-in-out;
+
+}
+
+.j{ display: flex;
+	flex-direction: column;
+	
+	align-content: center;
+	justify-content:center;
+}
+
+#formul{
+	display: flex;
+	flex-direction: column;
+}
+#form {
+    display: flex !important;
+    margin-top: 0em;
+}
+.for {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;}
+
+.flex1{
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		align-content: center;
+		flex-direction: column;	}
+	.flex2{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		align-content: center;
+		flex-direction: column;	}
+	.flexdisco {
+		align-items:flex-end ;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+	}
+
+.contsug{
+	font-size: 3rem;
+}
 .background-image{
 	background-image: url(../img/bodyf.jpg);
 
+}
+.back__cont{
+	background-image: url(../img/fp.jpg);
 }
 
 .paddingb{
@@ -401,8 +456,8 @@ form {
 		grid-template-rows: auto;
 		grid-template-areas: 
 		"nav nav "
-		"main header"
-		"main header"
+		"header header"
+		"main main"
 		"footer footer";
 
 	}
@@ -574,28 +629,7 @@ form {
 		background-image: url(../img/fondto.jpg);
 		background-size: cover;
 	}
-	.flex1{
-		display: flex;
-		justify-content: space-around;
-		align-items: center;
-		align-content: center;
-		flex-direction: column;	}
-	.flex2{
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		align-content: center;
-		flex-direction: column;	}
-	.flexdisco {
-		align-items:flex-end ;
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-evenly;
-	}
-
-.contsug{
-	font-size: 3rem;
-}
+	
 
 .bordercolo img{
 	border: solid;
@@ -632,30 +666,3 @@ form {
 		}
 
 	}
-
-.nav-link{
-	font-size: 2rem;
-	padding-bottom: 2rem;
-	color:black;
-	font-size: bold;
-	font-weight: 400;
-	font-family: 'Roboto', sans-serif;
-transition: transform .3s ease-in-out;
-
-}
-
-.j{ display: flex;
-	flex-direction: column;
-	
-	align-content: center;
-	justify-content:center;
-}
-
-#formul{
-	display: flex;
-	flex-direction: column;
-}
-#form {
-    display: flex !important;
-    margin-top: 0em;
-}
