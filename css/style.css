@@ -93,8 +93,9 @@ body { min-height: 100vh;
 	background-color: black;
 }
 
-p { font
+p { width: 85%;
 	padding: 1rem 1rem 1rem 1rem;
+
 }
 /*ACA HAY QUE EDITAR BIEN LA BARRA PARA QUE NO SE COMA LA FOTO,*/
 
@@ -155,6 +156,9 @@ footer {
 	background-color: #2C2A2A;
 	color: #D9DBDE;
 	
+}
+select {
+    background-color: azure;
 }
 
 
