@@ -1,6 +1,6 @@
 @import "mixing";
 
-		@media(min-width: 320px) 
+		@media(min-width:100px) 
 			{
 			.contenedorgrid {
 				@include grid (grid,100%, 100%, 1, 0);	
@@ -37,25 +37,22 @@
 					display: flex !important;
 					margin-top: 0;
 					flex-direction: column;
+					justify-content: center;
+					width: 85%;
 				}
 }
 /*media queries 768 HOME*/
 @media(min-width: 768px) 
-	{	
+	{
+	.navbar{
+		height: 10vh;
+	}	
 		nav div ul li {
 				display: inline-block;
 				align-content: center;
 				justify-content: center;
 				alignment-baseline: central;
 			}
-
-		nav {
-	align-content: center;
-	justify-content:center;
-				height:9vh;
-		}
-		.navbar-expand-md {
-		}
 		.contenedorgrid {
 			@include grid (grid,100%, 100vh, 2, 7px);		
 		grid-template-areas:
@@ -84,7 +81,10 @@
 		.contenedorgridtour{
 			@include grid (grid,100%, 100vh, 2,7px );
 		grid-template-areas: 
-		"nav nav " "main header" "footer footer";
+		"nav nav " 
+		"header header"
+		"main main" 
+		"footer footer";
 	}
 	//CONTACTO//
 	.contenedorgridcont{
@@ -111,6 +111,9 @@
 			}
 			//TOUR//
 			.contenedorgridtour{
+				grid-template-areas: 
+		"nav nav " "main header" 
+		"footer footer";
 				grid-gap:9px;
 			}
 			//GALERIA//		

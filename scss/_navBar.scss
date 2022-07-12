@@ -13,16 +13,14 @@
 	justify-content: center;
 	z-index: 1;
 	position: fixed;
-		.container-fluid{
-			.j{
-				align-content: center;
-				justify-content:center;
 
-				ul{
+		.container-fluid{
+				ul{ margin: auto;
 					align-content: center;
 					align-items: center;						list-style: none;
 					font-size: 2rem;
 					padding: 1rem;
+					margin-top: 2rem;
 					
 					li{
 						padding: 1.5rem;
@@ -56,7 +54,6 @@
 						}
 						}
 						}	
-						}
 
 .nav-link{
 	font-size: 2rem;

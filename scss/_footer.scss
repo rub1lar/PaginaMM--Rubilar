@@ -6,7 +6,7 @@ footer {
 	@include flex (flex, space-evenly , center ,center, row ,wrap);
 	font-family:$letra__footer;
 	font-size: 3.5rem;
-	font-weight:100 ;
+	font-weight:100 ; 
 	background-color: $color__nav_footer;
 }
 	h5 { font-size: $letra__chica;
@@ -30,16 +30,16 @@ footer {
 		}
 	footer article img {
 		filter: brightness(80%);
-		transition: transform 0.7s;
+		transition: transform 0.9s;
 		&:hover{
 			filter: brightness(100%);
 			transform: scale(1.1);
 			z-index: 1;
 			background-color:$color__titulos;
-			border-radius: 3rem;
+		border-radius:2px;	
+		}
 		}
 		
-		}
 
 
 

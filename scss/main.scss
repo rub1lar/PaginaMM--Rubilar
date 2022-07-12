@@ -14,12 +14,15 @@
 html {
 	font-size: 62.5%;
 }
-body { min-height: 100vh; 
+body { min-height: 100%; 
 	background-color:black;
 }
 header img{ 
 	width: 100%;
-	height: 90%;
+	height: 95%;
+}
+main div div {
+	text-align: center;
 }
 
 main div article {
@@ -51,7 +54,8 @@ p { text-align: justify;
 	color: $color__blanco;
 	font-size: $letra__media;
 }
-h1{ text-align: center;
+h1{ margin-top: 4rem;
+	text-align: center;
 	color:$color__titulos;
 }
 h2, h3 , h6 , h5{
@@ -73,8 +77,9 @@ textarea {
 	background-color:$color__azure;
 }
 label {
+	font-size: $letra__media;
 	color:$color__blanco;
-	margin: 1rem;
+	margin: 0.7rem;
 }
 input {
 	border-radius:40px;
@@ -89,7 +94,8 @@ select {
 
 table {
 	background-color: $color__nav_footer;
-	td{
+	td{ font-weight: bold;
+		font-size: $letra__chica;
 		text-align: center;
 		color: $color__blanco;
 	}
@@ -98,57 +104,12 @@ table {
 		color: $color__titulos;
 	}
 }
-.supergrande{
-	font-size:3.5rem;
-}
-.semigrande{
-	font-size: 1.5rem;
-	font-weight: bold;
-}
-.grande{
-	font-size:2rem;
-}
 
-.medio{
-	font-size: 1.8rem;
-}
-.chico{
-	font-size: 1rem;
-}
-.margin3{
-	margin: 1rem 2rem 1rem 11rem;
-}
-.margin2{
-	font-size: 2rem;
-	text-align: center;
-	padding: 2rem 1rem 1rem 1rem;
-
-}
 .paddingdere {
 	padding: 1rem 1rem 1rem 5rem;
 }
 
 
-.text-grueso{
-	font-weight:500 ;
-}
-.text-liviano{
-	font-weight: 300;
-}
-.text-regular{
-	font-weight: 400;
-}
-
-
-/*creo clases para alineacion de texto*/
-
-.text-center{
-	text-align: center;
-}.text-left{
-	text-align: left;
-}.text-right{
-	text-align: right;
-}
 .paddingto{
 	margin: 5rem 0rem 0rem 0rem;
 	;
@@ -160,10 +121,6 @@ table {
 
 }
 
-.fondotour{
-		background-image: url(../img/alter.jpg);
-		background-size: cover;
-}
 .flex {
 	@include flex (flex, space-around, center , center ,columns, wrap);
 }
@@ -171,7 +128,6 @@ table {
 .flexdisco {
 			@include flex (flex, space-evenly, flex-end, center ,columns, wrap);
 }
-//fondos de secciones//
 
 //id areas del grid//
 #nav {
@@ -223,3 +179,41 @@ table {
 				}
 }
 
+/*
+.text-grueso{
+	font-weight:500 ;
+}
+.text-liviano{
+	font-weight: 300;
+}
+.text-regular{
+	font-weight: 400;
+}*/
+
+
+/*creo clases para alineacion de texto*/
+
+/*.text-center{
+	text-align: center;
+}.text-left{
+	text-align: left;
+}.text-right{
+	text-align: right;
+}*/
+/*.supergrande{
+	font-size:3.5rem;
+}
+.semigrande{
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+.grande{
+	font-size:2rem;
+}
+
+.medio{
+	font-size: 1.8rem;
+}
+.chico{
+	font-size: 1rem;
+}*/
