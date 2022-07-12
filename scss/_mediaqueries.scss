@@ -1,0 +1,137 @@
+@import "mixing";
+
+		@media(min-width: 320px) 
+			{
+			.contenedorgrid {
+				@include grid (grid,100%, 100%, 1, 0);	
+					grid-template-areas:
+					"nav" "header" "main" 
+					"footer";
+				
+			 }
+	//discografia//
+			.contenedorgriddisco{
+				@include grid (grid,100%, 100vh, 1, 0);	
+					grid-template-areas:
+					"nav" "header" "main" "footer";
+			}
+	//galeria//
+			.contenedorgridgaleria{
+				@include grid (grid,100%, 100vh, 1, 0);	
+					grid-template-areas:
+					"nav" "header" "main" "footer";
+			}
+	//TOUR//
+			.contenedorgridtour{
+				@include grid (grid,100%, 100vh, 1, 0);	
+					grid-template-areas:
+					"nav" "header" "main" "footer";
+			}
+	//CONTACTO//
+			.contenedorgridcont{
+				@include grid (grid,100%, 100vh, 1, 0);	
+					grid-template-areas:
+					"nav" "header" "main" "footer";
+			}
+				#form {
+					display: flex !important;
+					margin-top: 0;
+					flex-direction: column;
+				}
+}
+/*media queries 768 HOME*/
+@media(min-width: 768px) 
+	{	
+		nav div ul li {
+				display: inline-block;
+				align-content: center;
+				justify-content: center;
+				alignment-baseline: central;
+			}
+
+		nav {
+	align-content: center;
+	justify-content:center;
+				height:9vh;
+		}
+		.navbar-expand-md {
+		}
+		.contenedorgrid {
+			@include grid (grid,100%, 100vh, 2, 7px);		
+		grid-template-areas:
+		"nav nav" "header main" "footer footer";		
+		}
+		//DISCOGRAFIA//
+		.contenedorgriddisco{
+			@include grid (grid,100%, 100vh, 3, 7px);
+			grid-template-areas: 
+			"nav nav nav" "header header header"
+			"main main main" "footer footer footer";
+		}
+		main div article{
+			@include flex (flex, space-around, center , center ,columns, wrap);
+		}
+		//GALERIA/
+		.contenedorgridgaleria{
+			@include grid (grid,100%, 100vh, 4, 7px);
+			grid-template-areas:
+			"nav nav nav nav" "header header header header"
+			"main main main main" "footer footer footer footer";	
+		
+		}
+			
+		//TOUR//
+		.contenedorgridtour{
+			@include grid (grid,100%, 100vh, 2,7px );
+		grid-template-areas: 
+		"nav nav " "main header" "footer footer";
+	}
+	//CONTACTO//
+	.contenedorgridcont{
+		@include grid (grid,100%, 100vh, 2, 7px);
+		grid-template-areas: 
+		"nav nav " "header header" 
+		"main main" "footer footer";
+	}
+}
+
+/*media queries 1024 HOME*/
+@media(min-width: 1024px) 
+{
+	.contenedorgrid {
+	}
+//CONTACTS//
+		.contenedorgridcont{
+				@include grid (grid,100%, 100vh, 2, 9px);
+				grid-template-areas: 
+				"nav nav"
+				"header header"
+				"main main"
+				"footer footer";
+			}
+			//TOUR//
+			.contenedorgridtour{
+				grid-gap:9px;
+			}
+			//GALERIA//		
+		.contenedorgridgaleria{
+			grid-template-columns:repeat(4, 1fr);
+			grid-template-areas: 
+			"nav nav nav nav"
+			"header header header header"
+			"main main main main"
+			"footer footer footer footer";
+		}
+		//discografia//
+		.contenedorgriddisco{
+			grid-template-columns:repeat(3, 1fr);
+			grid-template-areas: 
+			"nav nav nav"
+			"header header header"
+			"main main main"
+			"footer footer footer footer";
+		}
+}
+
+
+		

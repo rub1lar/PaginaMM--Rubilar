@@ -1,0 +1,610 @@
+/*AGREGAR FUENTE DE GOOGLE 
+PEGAR EL LINK ACA EN CSS*/
+
+/** {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+
+}
+*/
+
+
+/*selector de ID para armar bloques estructuras
+algo mas complejo que un color,aunque se puedes*/
+
+
+/*html {
+
+	font-size: 62.5%;
+}
+/**/
+/*nav ul li a {
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	align-items: center;
+	color: #D9DBDE;
+	text-decoration: none;
+	font-size: 2rem;
+	align-content: center;
+	filter: brightness(80%);
+	transition: transform 0.5s;
+	color: black;
+	height:.7vh;
+}*/
+/*
+
+
+header img{ 
+	width: 100%;
+	height: 100%;
+
+
+
+}*/
+
+
+
+/*ACA HAY QUE EDITAR BIEN LA BARRA PARA QUE NO SE COMA LA FOTO,*/
+
+
+/*nav ul{
+
+	align-content: center;
+	align-items: center;
+	list-style: none;
+	font-size: 2rem;
+	padding: 1rem;
+}
+nav ul li
+{
+
+	padding: 1.5rem;
+}
+nav ul li a:hover {
+	filter: brightness(130%);
+	transform: scale(1.1);
+	z-index: 1;
+	text-decoration: none;
+	height: 2vh;
+}*/
+
+/*.animacion__footer
+{
+	filter: brightness(80%);
+	transition: transform 0.3s;
+}
+
+.animacion__footer:hover {
+	filter: brightness(130%);
+	z-index: 1;
+	transform: scale(1.2);
+	text-decoration: none;
+}*/
+
+
+
+
+/*#nav {
+	grid-area: nav;
+}
+
+
+#header{
+	grid-area: header;
+}
+
+#main {
+	grid-area: main;
+}
+
+#footer{
+
+	grid-area: footer;
+}*/
+
+/*#Boton{
+	/* boton anterior--- 
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.4rem;
+	text-decoration: none;
+	height: 2rem;
+	width: 7Rem;
+	background-color:#8C1212;
+	font-weight: bold;
+	margin-left: 2rem;*/
+	/*transition: .3s ease all;
+	filter: brightness(60%);
+
+}
+
+#Boton:hover{
+	background-color: red;
+	filter: brightness(120%);
+}*/
+
+/*creo clasespara facilitar alineacion de texto*/
+
+
+
+
+
+
+/*.nav-link{
+	font-size: 2rem;
+	padding-bottom: 2rem;
+	color:black;
+	font-size: bold;
+	font-weight: 400;
+	font-family: 'Roboto', sans-serif;
+	transition: transform .3s ease-in-out;
+
+}
+*/
+/*.j{ display: flex;
+	flex-direction: column;
+	
+	align-content: center;
+	justify-content:center;
+}*/ 
+
+/*
+#form {
+	display: flex !important;
+	margin-top: 0em;
+}*/
+./*animacion{
+			animation: animation 5s linear infinite;
+			padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+		}
+
+		@keyframes animation {
+			0%{
+				box-shadow: 0 0 0 0 rgba(203, 202,202, 5); box-shadow: 0 0 0 0 rgba(203, 202,202, 5);
+			}
+			30%{
+				box-shadow: 0 0 0 3px rgba(203, 202,202, 5);box-shadow: 0 0 0 0 rgba(203, 202,202, 5);
+			}
+			60%{
+				box-shadow: 0 0 0 3px rgba(203, 202,202, 5);box-shadow: 0 0 0 3px rgba(203, 202,202, 5);
+			}
+			95%{
+				box-shadow: 0 0 0 0 rgba(203, 202,202, 5);box-shadow: 0 0 0 3px rgba(203, 202,202, 5);
+			}
+
+		}*/
+
+.for {
+	display: flex;
+	justify-content: center;
+	height: 100%;
+	align-items: center;}
+
+
+			.background-image{
+				background-image: url(../img/bodyf.jpg);
+
+			}
+			
+*/
+			.carousel{
+				object-fit: cover;
+				float: none;
+				margin-bottom: 3rem;
+				margin-left: auto;
+				margin-right: auto;
+				width: 80%;
+				height: auto;
+			}
+			
+
+
+	/*		.bordercolo img{
+				border: solid;
+				border-color: white;
+				border-style: double;
+			}
+
+			.borderdis img{
+				border: solid;
+				border-color: white;
+				align-items: center;
+				justify-content: center;
+				align-content: center;}*/
+
+				/*.contenedorgrid{
+					width:100%;
+					height:100vh;
+					display: grid;
+					grid-template-columns:1;		
+					grid-template-areas:
+					"nav"
+					"header"
+					"main"
+					"footer";}*/
+
+/*media queries 768 HOME*/
+/*@media(min-width: 768px) 
+{
+	.contenedorgrid {
+		grid-template-columns:repeat(2, 1fr);		
+		grid-template-areas:
+		"nav nav"
+		"header m
+		l.ain"
+		"footer footer";
+		grid-gap: 7px;
+	}
+	nav {
+		height:9vh;
+	}
+
+} 
+
+/*media queries 1024 HOME*/
+/*@media(min-width: 1024px) 
+{
+	.contenedorgrid {
+		grid-template-columns:repeat(2, 1fr);
+		grid-template-areas: 
+		"nav nav"
+		"header header"
+		"main main"
+		"footer footer";
+	}}*/
+
+
+/* mobile firt comienzo contactos*/
+/*.contenedorgridcont{
+	width:100vw;
+	height:100vh;
+	display: grid;
+	grid-template-columns:1;		
+	grid-template-rows: auto;
+	grid-template-areas:
+	"nav"
+	"header"
+	"main"
+	"footer"
+}
+form {
+	display: flex !important;
+	margin-top: 0em;
+	flex-direction: column;
+}*/
+
+/*media queries 768 contactos*/
+/*@media(min-width:768px)
+{
+	.contenedorgridcont{
+		grid-template-columns:repeat(2, 1fr);
+		grid-template-rows: auto;
+		grid-gap: 7px;
+		grid-template-areas: 
+		"nav nav "
+		"header header"
+		"main main"
+		"footer footer";
+
+	}
+
+}*/
+/*media queries 1024 contactos*/
+/*@media(min-width:1024px) 
+{
+	.contenedorgridcont{
+		grid-template-columns:repeat(2, 1fr);
+		grid-gap:8px;
+		grid-template-areas: 
+		"nav nav"
+		"header header"
+		"main main"
+		"footer footer";
+	}
+
+}*/
+
+/*media queries tour */
+/*.contenedorgridtour{
+	width: 100vw;	
+	height: 100vh;
+	display:grid;
+	grid-template-columns:repeat(1, 1fr);
+	grid-template-areas: 
+	"nav "
+	"header"
+	"main"
+	"footer ";
+}
+*/
+
+/*media queries tour 768px*/
+
+/*@media(min-width:768px)
+{
+	.contenedorgridtour{
+		display:grid;
+		grid-template-columns:repeat(2);
+		grid-template-rows:auto;
+		grid-gap: 7px;
+		grid-template-areas: 
+		"nav nav "
+		"main header"
+		"footer footer";
+	}
+	.imgtour{
+		display: none;
+	}
+
+}*/
+
+/*media queries 1024 tour*/
+/*@media(min-width:1024px) 
+{
+	.contenedorgridtour{
+		grid-gap:9px;
+
+	}
+*/
+	
+}
+/* mobile firt comienzo galeria*/
+/*.contenedorgridgaleria{
+	width:100vw;
+	height:100vh;
+	display: grid;
+	grid-template-columns:repeat(1, 1fr);
+	grid-template-rows: auto;
+	grid-template-areas:
+	"nav"
+	"header"
+	"main"
+	"footer";
+
+}
+
+@media(min-width:768px)
+{
+	.contenedorgridgaleria{
+		grid-template-columns:repeat(4, 1fr);
+		grid-template-areas:
+		"nav nav nav nav"
+		"header header header header"
+		"main main main main"
+		"footer footer footer footer";
+	}
+	nav div ul li{
+		display: inline-block;
+		align-content: center;
+		justify-content: center;
+		alignment-baseline: central;
+	}
+	grid-gap: 7px;
+}
+*/
+/*media queries 1024 GALERIA*/
+/*@media(min-width: 1024px) 
+{
+
+	.contenedorgridgaleria{
+		grid-template-columns:repeat(4, 1fr);
+
+		grid-template-areas: 
+		"nav nav nav nav"
+		"header header header header"
+		"main main main main"
+		"footer footer footer footer";
+	}
+	*/
+
+
+}
+/* mobile firt comienzo discografia*/
+/*.contenedorgriddisco{
+	width:100vw;
+	height:100vh;
+	display: grid;
+	grid-template-columns:1fr;		
+	grid-template-rows: auto;
+	grid-template-areas:
+	"nav"
+	"header"
+	"main"
+	"footer"
+
+}*/
+/* mobile firt 768px discografia*/
+/*@media(min-width:768px)
+{
+	.contenedorgriddisco{
+		grid-template-columns:repeat(3, 1fr);
+		grid-template-rows: auto;
+		grid-gap: 7px;
+		grid-template-areas: 
+		"nav nav nav"
+		"header header header"
+		"main main main"
+		"footer footer footer"
+	}
+	main div article{
+
+		display: flex;
+		justify-content: space-around;
+		justify-items: space-around;
+		flex-wrap: wrap;
+	}}
+
+	@media(min-width:1024px){
+
+		.contenedorgriddisco{
+			grid-template-columns:repeat(, 1fr);
+			grid-template-areas: 
+			"nav nav nav"
+			"header header"
+			"main main main main"
+			"footer footer footer"}
+
+		}*/
+
+
+
+		
+
+
+
+
+
+
+
+
+
+/*		@import "mixing";
+
+		@media(min-width: 320px) 
+			{
+			.contenedorgrid {
+				@include grid (grid,100%, 100vh, 1, 0);	
+					grid-template-areas:
+					"nav" "header" "main" "footer";
+			 }
+	//discografia//
+			.contenedorgriddisco{
+				@include grid (grid,100%, 100vh, 1, 0);	
+					grid-template-areas:
+					"nav" "header" "main" "footer";
+			}
+	//galeria//
+			.contenedorgridgaleria{
+				@include grid (grid,100%, 100vh, 1, 0);	
+					grid-template-areas:
+					"nav" "header" "main" "footer";
+			}
+	//TOUR//
+			.contenedorgridtour{
+				@include grid (grid,100%, 100vh, 1, 0);	
+					grid-template-areas:
+					"nav" "header" "main" "footer";
+			}
+	//CONTACTO//
+			.contenedorgridcont{
+				@include grid (grid,100%, 100vh, 1, 0);	
+					grid-template-areas:
+					"nav" "header" "main" "footer";
+			}
+				#form {
+					display: flex !important;
+					margin-top: 0;
+					flex-direction: column;
+				}
+}
+/*media queries 768 HOME*/
+@media(min-width: 768px) 
+	{	nav div ul li{
+				display: inline-block;
+				align-content: center;
+				justify-content: center;
+				alignment-baseline: central;
+			}
+
+		nav {
+			display: flex;
+	flex-direction: column;
+	
+	align-content: center;
+	justify-content:center;
+	
+				height:9vh;
+		}
+		.navbar-expand-md {
+
+		}
+		.contenedorgrid {
+			@include grid (grid,100%, 100vh, 2, 7px);		
+		grid-template-areas:
+		"nav nav" "header main" "footer footer";		
+		}
+		//DISCOGRAFIA//
+		.contenedorgriddisco{
+			@include grid (grid,100%, 100vh, 3, 7px);
+			grid-template-areas: 
+			"nav nav nav" "header header header"
+			"main main main" "footer footer footer";
+		}
+		main div article{
+			display: flex;
+			justify-content: space-around;
+			justify-items: space-around;
+			flex-wrap: wrap;
+		}
+		//GALERIA/
+		.contenedorgridgaleria{
+			@include grid (grid,100%, 100vh, 4, 7px);
+			grid-template-areas:
+			"nav nav nav nav" "header header header header"
+			"main main main main" "footer footer footer footer";	
+		
+		}
+			
+		//TOUR//
+		.contenedorgridtour{
+			@include grid (grid,100%, 100vh, 2,7px );
+		grid-template-areas: 
+		"nav nav " "main header" "footer footer";
+	}
+	//CONTACTO//
+	.contenedorgridcont{
+		@include grid (grid,100%, 100vh, 2, 7px);
+		grid-template-areas: 
+		"nav nav " "header header" 
+		"main main" "footer footer";
+	}
+}
+
+/*media queries 1024 HOME*/
+@media(min-width: 1024px) 
+{
+	.contenedorgrid {
+		grid-template-columns:repeat(2, 1fr);
+		grid-template-areas: 
+		"nav nav"
+		"header header"
+		"main main"
+		"footer footer";
+	}
+//CONTACTS//
+		.contenedorgridcont{
+				grid-template-columns:repeat(2, 1fr);
+				grid-gap:8px;
+				grid-template-areas: 
+				"nav nav"
+				"header header"
+				"main main"
+				"footer footer";
+			}
+			//TOUR//
+			.contenedorgridtour{
+				grid-gap:9px;
+			}
+			//GALERIA//		
+		.contenedorgridgaleria{
+			grid-template-columns:repeat(4, 1fr);
+
+			grid-template-areas: 
+			"nav nav nav nav"
+			"header header header header"
+			"main main main main"
+			"footer footer footer footer";
+		}
+		//discografia//
+		.contenedorgriddisco{
+			grid-template-columns:repeat(3, 1fr);
+			grid-template-areas: 
+			"nav nav nav"
+			"header header header"
+			"main main main"
+			"footer footer footer footer";
+		}
+}
+
+*/
+		
