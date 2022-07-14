@@ -45,7 +45,7 @@
     margin-top: 0;
     flex-direction: column;
     justify-content: center;
-    width: 85%; } }
+    width: 80%; } }
 
 /*media queries 768 HOME*/
 @media (min-width: 768px) {
@@ -221,8 +221,10 @@ html {
 body {
   min-height: 100%;
   background-image: linear-gradient(135deg, #282323FF, #141414FF, black);
-  background-size: 300%;
-  animation: anima 7s infinite linear alternate; }
+  background-size: 300%; }
+
+.ani {
+  animation: anima 8s infinite linear alternate; }
 
 @keyframes anima {
   0% {
@@ -306,7 +308,7 @@ select {
   background-color: azure; }
 
 table {
-  background-image: linear-gradient(135deg, #141414FF, #3D3D3DFF, #3D3D3DFF, #141414FF);
+  background-image: linear-gradient(135deg, #141414FF, #3D3D3DFF, #141414FF);
   background-size: 500%;
   animation: anima 8s infinite; }
   table td {
