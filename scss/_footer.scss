@@ -1,7 +1,4 @@
-@import "_font";
-@import "_mediaqueries";
-@import "mixing";
-@import "_vars";
+
 footer {
 	@include flex (flex, space-evenly , center ,center, row ,wrap);
 	font-family:$letra__footer;
@@ -30,12 +27,12 @@ footer {
 		}
 	footer article img {
 		filter: brightness(80%);
-		transition: transform 0.9s;
+		transition: transform .4s;
 		&:hover{
 			filter: brightness(100%);
 			transform: scale(1.1);
 			z-index: 1;
-			background-color:$color__titulos;
+			background-color:#3D3D3DFF;
 		border-radius:2px;	
 		}
 		}

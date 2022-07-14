@@ -54,9 +54,13 @@ p { text-align: justify;
 	color: $color__blanco;
 	font-size: $letra__media;
 }
-h1{ margin-top: 4rem;
-	text-align: center;
-	color:$color__titulos;
+h1{
+	//degradado//
+	font-weight: 500;
+	background: linear-gradient(to right, $color__titulos , darkred);
+		-webkit-background-clip:text;
+		background-clip:text;
+		-webkit-text-fill-color: transparent;
 }
 h2, h3 , h6 , h5{
 	color:$color__blanco;
@@ -66,7 +70,8 @@ h4 {
 	color:$color__blanco;
 	padding: 1rem 2rem 1rem 2rem;
 	text-align: center;
-	font-size: 1.7rem;
+	font-size: 1.5rem;
+	font-weight: 700;
 	font-family: 'Roboto', sans-serif;
 }
 
@@ -80,9 +85,9 @@ label {
 	font-size: $letra__media;
 	color:$color__blanco;
 	margin: 0.7rem;
-}
+	margin-left: 18px;}
 input {
-	border-radius:40px;
+	border-radius:4px;
 	margin-left: 1rem;
 	margin-right: 1rem;
 	background-color:$color__azure;
@@ -93,8 +98,8 @@ select {
 }
 
 table {
-	background-color: $color__nav_footer;
-	td{ font-weight: bold;
+	background-color: #3B3B44FF;
+	td{
 		font-size: $letra__chica;
 		text-align: center;
 		color: $color__blanco;
@@ -103,22 +108,21 @@ table {
 		text-align: center;
 		color: $color__titulos;
 	}
+}.text-left{
+	text-align: left;
 }
-
 .paddingdere {
 	padding: 1rem 1rem 1rem 5rem;
 }
 
 
 .paddingto{
-	margin: 5rem 0rem 0rem 0rem;
+	margin: 4rem 0rem 0rem 0rem;
 	;
 
 }
 .paddingfo{
 	margin: 5rem 1rem 3rem 1rem;
-	;
-
 }
 
 .flex {
@@ -144,8 +148,10 @@ table {
 	grid-area: footer;
 }
 
-
-#boton__cancelar{
+.carousel{
+	margin: 4rem;
+}
+.boton__cancelar{
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 1.4rem;
 	text-decoration: none;
@@ -153,67 +159,20 @@ table {
 	width: 7Rem;
 	background-color:$color__titulos;
 	font-weight: bold;
-	margin-left: 2rem;
+	margin-left: 1rem;
 	transition: .3s ease all;
 	filter: brightness(80%);
 		&:hover{
-			background-color:$color__titulos;
-			filter: brightness(120%);
+			background-color:darkred;
+			filter: brightness(100%);
 		}
 }
+//extend //
+.boton__enviar{
+	@extend .boton__cancelar;
+	&:hover{
+			background-color:darkgreen;
+			filter: brightness(170%);
+		}
 
-#boton__enviar{
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 1.4rem;
-	text-decoration: none;
-	height: 3rem;
-	width: 7Rem;
-	background-color:$color__titulos;
-	font-weight: bold;
-	margin-left: 2rem;
-	transition: .3s ease all;
-	filter: brightness(80%);
-				&:hover{
-					background-color:$color__titulos;
-					filter: brightness(120%);
-				}
 }
-
-/*
-.text-grueso{
-	font-weight:500 ;
-}
-.text-liviano{
-	font-weight: 300;
-}
-.text-regular{
-	font-weight: 400;
-}*/
-
-
-/*creo clases para alineacion de texto*/
-
-/*.text-center{
-	text-align: center;
-}.text-left{
-	text-align: left;
-}.text-right{
-	text-align: right;
-}*/
-/*.supergrande{
-	font-size:3.5rem;
-}
-.semigrande{
-	font-size: 1.5rem;
-	font-weight: bold;
-}
-.grande{
-	font-size:2rem;
-}
-
-.medio{
-	font-size: 1.8rem;
-}
-.chico{
-	font-size: 1rem;
-}*/
