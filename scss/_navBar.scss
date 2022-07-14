@@ -27,21 +27,20 @@
 								font-family: $letra__footer;
 								display: flex;
 								align-items: center;
-								color: $color__nav_footer;
+								color: $color__blanco;
 								text-decoration: none;
 								font-size: 2rem;
 								align-content: center;
 								filter: brightness(80%);
 								transition: transform 0.5s;
-								color:$color__negro;
 								height:.7vh;
 								&:hover{
-									filter: brightness(130%);
-									transform: scale(1.1);
+									filter: brightness(160%);
+									transform: scale(1.2);
 									z-index: 1;
 									text-decoration: none;
 									height: 2vh;
-									color:$color__titulos;
+									color:white;
 
 								}
 

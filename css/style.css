@@ -9,7 +9,7 @@
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 0;
     grid-template-areas: "nav" "header" "main"  "footer";
-    background-image: url(../img/fondo-home.jpg); }
+    /*	background-image: map-get($map: $paletadefondos,$key:'uno');*/ }
   .contenedorgriddisco {
     display: grid;
     width: 100%;
@@ -17,7 +17,7 @@
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 0;
     grid-template-areas: "nav" "header" "main" "footer";
-    background-image: url(../img/fondo-disco.webp); }
+    /*background-image: map-get($map: $paletadefondos,$key:'dos');*/ }
   .contenedorgridgaleria {
     display: grid;
     width: 100%;
@@ -39,7 +39,7 @@
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 0;
     grid-template-areas: "nav" "header" "main" "footer";
-    background-image: url(../img/fondo-cont.jpg); }
+    /*	background-image: map-get($map: $paletadefondos,$key:'tres');*/ }
   #form {
     display: flex !important;
     margin-top: 0;
@@ -110,7 +110,7 @@
     grid-template-areas: "nav nav" "header header" "main main" "footer footer"; }
   .contenedorgridtour {
     grid-template-areas: "nav nav " "main header"  "footer footer";
-    grid-gap: 9px; }
+    grid-gap: 5px; }
   .contenedorgridgaleria {
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: "nav nav nav nav" "header header header header" "main main main main" "footer footer footer footer"; }
@@ -144,21 +144,20 @@
         font-family: "Varela Round", sans-serif;
         display: flex;
         align-items: center;
-        color: #2C2A2A;
+        color: #D9DBDE;
         text-decoration: none;
         font-size: 2rem;
         align-content: center;
         filter: brightness(80%);
         transition: transform 0.5s;
-        color: black;
         height: .7vh; }
         .navbar .container-fluid ul li a:hover {
-          filter: brightness(130%);
-          transform: scale(1.1);
+          filter: brightness(160%);
+          transform: scale(1.2);
           z-index: 1;
           text-decoration: none;
           height: 2vh;
-          color: #0d6efd; }
+          color: white; }
 
 .nav-link {
   font-size: 2rem;
@@ -221,11 +220,21 @@ html {
 
 body {
   min-height: 100%;
-  background-color: black; }
+  background-image: linear-gradient(135deg, #282323FF, #141414FF, black);
+  background-size: 300%;
+  animation: anima 7s infinite linear alternate; }
+
+@keyframes anima {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
 
 header img {
   width: 100%;
-  height: 95%; }
+  height: 100%; }
 
 main div div {
   text-align: center; }
@@ -258,7 +267,7 @@ p {
 
 h1 {
   font-weight: 500;
-  background: linear-gradient(to right, #0d6efd, darkred);
+  background: linear-gradient(to right, #262626FF, #262626FF, #D9DBDE, white);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent; }
@@ -297,7 +306,9 @@ select {
   background-color: azure; }
 
 table {
-  background-color: #3B3B44FF; }
+  background-image: linear-gradient(135deg, #141414FF, darkblue, #141414FF);
+  background-size: 500%;
+  animation: anima 7s infinite; }
   table td {
     font-size: 1.2rem;
     text-align: center;
@@ -367,3 +378,28 @@ table {
 .boton__enviar:hover {
   background-color: darkgreen;
   filter: brightness(170%); }
+
+/*@keyframes movimiento {
+	from {
+		background-position: bottom left;
+	}
+	to {
+		background-position: top right;
+	}
+}
+
+.movi{
+	animation: movimiento 10s infinite linear alternate;
+	
+}*/
+/*@keyframes animado{
+	0%{
+		background-position: 0% 50%;
+	}
+	50%{
+		background-position: 100% 50%;
+	}
+	100%{
+		background-position: 0% 50%;
+	}
+}*/
