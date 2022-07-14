@@ -1,7 +1,6 @@
 //imports//
 @import "mixing";
 @import "_vars";
-@import "_font";
 @import "_mediaqueries";
 @import "_navBar";
 @import "_footer";
@@ -68,7 +67,7 @@ main div div a{
 
 p { text-align: justify;
 	width: 85%;
-	color: $color__blanco;
+	color: map-get($map: $paletadecolor,$key:'dos');
 	font-size: $letra__media;
 }
 h1{
@@ -81,11 +80,11 @@ h1{
 		-webkit-text-fill-color: transparent;
 }
 h2, h3 , h6 , h5{
-	color:$color__blanco;
+	color:map-get($map: $paletadecolor,$key:'dos');
 	font-size: bold;
 }
 h4 {
-	color:$color__blanco;
+	color:map-get($map: $paletadecolor,$key:'dos');
 	padding: 1rem 2rem 1rem 2rem;
 	text-align: center;
 	font-size: 1.5rem;
@@ -97,39 +96,39 @@ textarea {
 	margin-left: 1rem;
 	margin-right: 1rem;
 	resize: none;
-	background-color:$color__azure;
+	background-color:map-get($map: $paletadecolor,$key:'cuatro');
 }
 label {
 	font-size: $letra__media;
-	color:$color__blanco;
+	color:map-get($map: $paletadecolor,$key:'dos');;
 	margin: 0.7rem;
 	margin-left: 18px;}
 input {
 	border-radius:4px;
 	margin-left: 1rem;
 	margin-right: 1rem;
-	background-color:$color__azure;
+	background-color:map-get($map: $paletadecolor,$key:'cuatro');
 }
 
 select {
-	background-color:$color__azure;
+	background-color:map-get($map: $paletadecolor,$key:'cuatro');
 }
 
 
 
 
 table {
-	background-image: linear-gradient(135deg, #141414FF, darkblue,#141414FF);
+	background-image: linear-gradient(135deg, #141414FF, #3D3D3DFF,#3D3D3DFF, #141414FF);
 	background-size: 500%;
-	animation: anima 7s infinite;
+	animation: anima 8s infinite;
 	td{
 		font-size: $letra__chica;
 		text-align: center;
-		color: $color__blanco;
+		color: map-get($map: $paletadecolor,$key:'dos');
 	}
 	th{
 		text-align: center;
-		color: $color__titulos;
+		color: map-get($map: $paletadecolor,$key:'cuatro');
 	}
 }.text-left{
 	text-align: left;
@@ -180,7 +179,7 @@ table {
 	text-decoration: none;
 	height: 3rem;
 	width: 7Rem;
-	background-color:$color__titulos;
+	background-color:map-get($map: $paletadecolor,$key:'dos');
 	font-weight: bold;
 	margin-left: 1rem;
 	transition: .3s ease all;
