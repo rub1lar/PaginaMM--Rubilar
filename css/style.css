@@ -274,7 +274,7 @@ h1 {
   background-clip: text;
   -webkit-text-fill-color: transparent; }
 
-h2, h3, h6, h5 {
+h2, h3, h6 {
   color: #D9DBDE;
   font-size: bold; }
 
@@ -377,34 +377,21 @@ table {
     background-color: darkred;
     filter: brightness(100%); }
 
-.boton__enviar:hover {
-  background-color: darkgreen;
-  filter: brightness(170%); }
+.boton__enviar {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  text-decoration: none;
+  height: 3rem;
+  width: 7Rem;
+  background-color: #D9DBDE;
+  font-weight: bold;
+  margin-left: 1rem;
+  transition: .3s ease all;
+  filter: brightness(80%); }
+  .boton__enviar:hover {
+    background-color: darkgreen;
+    filter: brightness(170%); }
 
 .navbar-toggler {
-  background-color: #4C4C4CFF; }
-
-/*@keyframes movimiento {
-	from {
-		background-position: bottom left;
-	}
-	to {
-		background-position: top right;
-	}
-}
-
-.movi{
-	animation: movimiento 10s infinite linear alternate;
-	
-}*/
-/*@keyframes animado{
-	0%{
-		background-position: 0% 50%;
-	}
-	50%{
-		background-position: 100% 50%;
-	}
-	100%{
-		background-position: 0% 50%;
-	}
-}*/
+  background-color: #474747FF;
+  border-color: black; }
