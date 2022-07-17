@@ -226,7 +226,7 @@ body {
   background-color: #0F0F0FFF; }
 
 .body-back {
-  background-image: linear-gradient(135deg, white, #141414FF, black);
+  background-image: linear-gradient(135deg, #545454FF, #141414FF, black);
   background-size: 300%;
   animation: anima 8s infinite; }
 
