@@ -15,8 +15,19 @@ html {
 }
 
 body {min-height: 100%; 
+	
+}
+//fondo de galeria y discografia//
+.body-gale{
+	background-color: #0F0F0FFF;
+}
+
+
+
+//fondo de tour home y contacto//
+.body-back{
 	background-image: linear-gradient(135deg, white, #141414FF,black);
-	background-size:500%;
+	background-size:300%;
 	animation: anima 8s infinite;
 }
 .ani{
@@ -237,12 +248,11 @@ table {
 }
 //pagina 404//
 .contenedor{
-	height: 50%
-;
 	background-image: url("../img/space1.jpg");
-	background-size: 100%;
+	background-size:100vh;
 	.luna {
 		display: inline-block;
+		height: 550px;
 	}
 
 	.error4{
