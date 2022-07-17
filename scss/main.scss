@@ -15,9 +15,9 @@ html {
 }
 
 body {min-height: 100%; 
-	background-image: linear-gradient(135deg, #282323FF, #141414FF, black);
-	background-size: 300%;
-	
+	background-image: linear-gradient(135deg, white, #141414FF,black);
+	background-size:500%;
+	animation: anima 8s infinite;
 }
 .ani{
 	animation:anima 8s infinite linear alternate;
@@ -76,7 +76,7 @@ p { text-align: justify;
 h1{
 	//degradado//
 	font-weight: 500;
-	background: linear-gradient(to right, #262626FF, #262626FF, $color__blanco, white
+	background: linear-gradient(to right, #262626FF, darkgrey, #262626FF, $color__blanco, white
 	);
 		-webkit-background-clip:text;
 		background-clip:text;
@@ -136,6 +136,9 @@ table {
 }.text-left{
 	text-align: left;
 }
+.blanco{
+	color: $color__blanco;
+}
 .paddingdere {
 	padding: 1rem 1rem 1rem 5rem;
 }
@@ -176,6 +179,24 @@ table {
 .carousel{
 	margin: 4rem;
 }
+.boton-escuchar{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1rem;
+	padding:.7rem;
+	border-radius: 10px;
+	text-decoration: none;
+	height: 2.2rem;
+	width: auto;
+	color: black;
+	background-color:map-get($map: $paletadecolor,$key:'dos');
+	font-weight: bold;
+	margin-left: 1rem;
+	filter: brightness(80%);
+		&:hover{
+			background-color:$color__blanco;
+			filter: brightness(100%);
+		}
+}
 .boton__cancelar{
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 1.4rem;
@@ -214,3 +235,75 @@ table {
 	background-color:#474747FF;
 	border-color: black;
 }
+//pagina 404//
+.contenedor{
+	background-image: url("../img/space1.jpg");
+	background-size: 200%;
+	.luna {
+		display: inline-block;
+	}
+
+	.error4{
+	background-color: rgba(40,29, 123, .5);
+	color: red;
+	margin-top: 8rem;
+	   font-family: 'Press Start 2P', cursive;
+	border-radius:60px;
+	}
+
+	.texto404{
+	font-size: $letra__supergrande;
+	}
+	.boton-404{
+	background-color: darkblue;
+	color: white;
+	border-color: black;
+	border: solid;
+	}
+	.nave {
+	display: block;
+	  width: 100px;
+	  height:auto;
+	  position: absolute;
+	  -webkit-animation: moveX 2.05s linear 0s infinite alternate, moveY 1.4s linear 0s infinite alternate;
+	  -moz-animation: moveX 2.05s linear 0s infinite alternate, moveY 1.4s linear 0s infinite alternate;
+	  -o-animation: moveX 2.05s linear 0s infinite alternate, moveY 1.4s linear 0s infinite alternate;
+	  animation: moveX 2.05s linear 0s infinite alternate, moveY 1.4s linear 0s infinite alternate;
+  }
+	.astro{
+		z-index: 1;
+	display: block;
+	  width: 300px;
+	  height: auto;
+	  position: absolute;
+	  -webkit-animation: moveX 3.05s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+	  -moz-animation: moveX 3.05s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+	  -o-animation: moveX 3.05s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+	  animation: moveX 3.05s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+	}
+}
+@-webkit-keyframes moveX {
+  from { left: 0; } to { left: 780px; }
+}
+@-moz-keyframes moveX {
+  from { left: 0; } to { left: 780px; }
+}
+@-o-keyframes moveX {
+  from { left: 0; } to { left: 780px; }
+}
+@keyframes moveX {
+  from { left: 0; } to { left: 780px; }
+}
+@-webkit-keyframes moveY {
+  from { top: 0; } to { top: 280px; }
+}
+@-moz-keyframes moveY {
+  from { top: 0; } to { top: 280px; }
+}
+@-o-keyframes moveY {
+  from { top: 0; } to { top: 280px; }
+}
+@keyframes moveY {
+  from { top: 0; } to { top: 280px; }
+}
+

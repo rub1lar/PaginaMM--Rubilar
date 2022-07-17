@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Rubik+Wet+Paint&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 @media (min-width: 100px) {
   .contenedorgrid {
     display: grid;
@@ -220,8 +221,9 @@ html {
 
 body {
   min-height: 100%;
-  background-image: linear-gradient(135deg, #282323FF, #141414FF, black);
-  background-size: 300%; }
+  background-image: linear-gradient(135deg, white, #141414FF, black);
+  background-size: 500%;
+  animation: anima 8s infinite; }
 
 .ani {
   animation: anima 8s infinite linear alternate; }
@@ -269,7 +271,7 @@ p {
 
 h1 {
   font-weight: 500;
-  background: linear-gradient(to right, #262626FF, #262626FF, #D9DBDE, white);
+  background: linear-gradient(to right, #262626FF, darkgrey, #262626FF, #D9DBDE, white);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent; }
@@ -322,6 +324,9 @@ table {
 .text-left {
   text-align: left; }
 
+.blanco {
+  color: #D9DBDE; }
+
 .paddingdere {
   padding: 1rem 1rem 1rem 5rem; }
 
@@ -362,6 +367,23 @@ table {
 .carousel {
   margin: 4rem; }
 
+.boton-escuchar {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  padding: .7rem;
+  border-radius: 10px;
+  text-decoration: none;
+  height: 2.2rem;
+  width: auto;
+  color: black;
+  background-color: #D9DBDE;
+  font-weight: bold;
+  margin-left: 1rem;
+  filter: brightness(80%); }
+  .boton-escuchar:hover {
+    background-color: #D9DBDE;
+    filter: brightness(100%); }
+
 .boton__cancelar, .boton__enviar {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.4rem;
@@ -395,3 +417,89 @@ table {
 .navbar-toggler {
   background-color: #474747FF;
   border-color: black; }
+
+.contenedor {
+  background-image: url("../img/space1.jpg");
+  background-size: 200%; }
+  .contenedor .luna {
+    display: inline-block; }
+  .contenedor .error4 {
+    background-color: rgba(40, 29, 123, 0.5);
+    color: red;
+    margin-top: 8rem;
+    font-family: 'Press Start 2P', cursive;
+    border-radius: 60px; }
+  .contenedor .texto404 {
+    font-size: 3.5rem; }
+  .contenedor .boton-404 {
+    background-color: darkblue;
+    color: white;
+    border-color: black;
+    border: solid; }
+  .contenedor .nave {
+    display: block;
+    width: 100px;
+    height: auto;
+    position: absolute;
+    -webkit-animation: moveX 2.05s linear 0s infinite alternate, moveY 1.4s linear 0s infinite alternate;
+    -moz-animation: moveX 2.05s linear 0s infinite alternate, moveY 1.4s linear 0s infinite alternate;
+    -o-animation: moveX 2.05s linear 0s infinite alternate, moveY 1.4s linear 0s infinite alternate;
+    animation: moveX 2.05s linear 0s infinite alternate, moveY 1.4s linear 0s infinite alternate; }
+  .contenedor .astro {
+    z-index: 1;
+    display: block;
+    width: 300px;
+    height: auto;
+    position: absolute;
+    -webkit-animation: moveX 3.05s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+    -moz-animation: moveX 3.05s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+    -o-animation: moveX 3.05s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+    animation: moveX 3.05s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate; }
+
+@-webkit-keyframes moveX {
+  from {
+    left: 0; }
+  to {
+    left: 780px; } }
+
+@-moz-keyframes moveX {
+  from {
+    left: 0; }
+  to {
+    left: 780px; } }
+
+@-o-keyframes moveX {
+  from {
+    left: 0; }
+  to {
+    left: 780px; } }
+
+@keyframes moveX {
+  from {
+    left: 0; }
+  to {
+    left: 780px; } }
+
+@-webkit-keyframes moveY {
+  from {
+    top: 0; }
+  to {
+    top: 280px; } }
+
+@-moz-keyframes moveY {
+  from {
+    top: 0; }
+  to {
+    top: 280px; } }
+
+@-o-keyframes moveY {
+  from {
+    top: 0; }
+  to {
+    top: 280px; } }
+
+@keyframes moveY {
+  from {
+    top: 0; }
+  to {
+    top: 280px; } }
