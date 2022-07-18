@@ -11,6 +11,8 @@
     grid-gap: 0;
     grid-template-areas: "nav" "header" "main"  "footer";
     /*	background-image: map-get($map: $paletadefondos,$key:'uno');*/ }
+    .contenedorgrid main h1 {
+      margin-top: 6rem; }
   .contenedorgriddisco {
     display: grid;
     width: 100%;

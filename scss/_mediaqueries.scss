@@ -2,6 +2,9 @@
 		@media(min-width:100px) 
 			{
 			.contenedorgrid {
+					main h1{
+			margin-top:6rem;
+		}
 				@include grid (grid,100%, 100vh, 1, 0);	
 					grid-template-areas:
 					"nav" "header" "main" 
