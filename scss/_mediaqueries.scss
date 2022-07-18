@@ -137,7 +137,8 @@
 			grid-template-columns:repeat(4, 1fr);
 			grid-template-areas: 
 			"nav nav nav nav"
-			"main main header header"
+			"header header header header"
+			"main main main main"
 			"footer footer footer footer";
 
 		}

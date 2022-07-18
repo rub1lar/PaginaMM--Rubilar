@@ -29,6 +29,8 @@ footer {
 		filter: brightness(80%);
 		transition: transform .4s;
 		&:hover{
+			.animaciontour{}; 
+			.ani_tour{};
 			filter: brightness(100%);
 			transform: scale(1.1);
 			z-index: 1;

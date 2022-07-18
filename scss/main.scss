@@ -39,12 +39,14 @@ header img{
 	
 	width: 100%;
 	height: 100%;
-}
+	border-bottom-right-radius:25px;
+border-bottom-left-radius:25px;}
 main div div {
 	text-align: center;
 }
 
 main div article {
+
 	width: 250px;
 	height: auto;
 	margin: 1rem 2rem 1rem 2rem;
@@ -52,19 +54,31 @@ main div article {
 	filter: brightness(80%);
 	transition: transform 0.7s;
 		&:hover{
+
 			filter: brightness(110%);
 			transform: scale(1.1);
 			z-index: 1;
 		}
 }
+main div article img {
+	border-radius:20px;
+box-shadow: 0 0 4px rgba(48, 57, 79, 1.0), 
+			0 0 13px rgba(48, 57, 79, 1.0), 0 0 30px rgba(48, 57, 79, 1.0);
+				&:hover{
+					transition-delay:1s;
+				border-radius:20px;
+			}
+}
+
 main div div a{
+
+
 			filter: brightness(80%);
 			transition: transform 1s;
 			&:hover{
 				filter: brightness(130%);
 				transform: scale(1.2);
 				z-index: 1;
-		
 					}
 		}
 
@@ -182,7 +196,7 @@ table {margin-top:2rem;
 	margin: 4rem;
 }
 .boton-escuchar{
-	color:#00ADFFFF;
+	color:$color__blanco;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 1rem;
 	padding:.7rem;
@@ -195,12 +209,15 @@ table {margin-top:2rem;
 	margin-left: 1rem;
 	filter: brightness(80%);
 		&:hover{
-			background-color:$color__blanco;
+			color: white;
+			box-shadow: 0 0 3px rgba(48, 57, 79, 1.0), 
+			0 0 10px rgba(48, 57, 79, 1.0), 0 0 20px rgba(48, 57, 79, 1.0);
 			filter: brightness(100%);
+			transition-delay:0.7s;
 		}
 }
 .boton__cancelar{
-	color:#00ADFFFF;
+	color:map-get($map: $paletadecolor,$key:'cuatro');
 	border-color:$color__blanco;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 1.4rem;
@@ -336,4 +353,50 @@ margin-bottom:8rem;
 	padding-left: 9rem;
 	width: 80%;
 	height: auto;
+}
+
+
+//------borde animado--//
+
+
+
+.animaciontour {
+	position: relative;
+}
+
+.ani_tour:before, .ani_tour:after {
+	content: '';
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	background: linear-gradient(124deg, #79fb00, #8d01a0, #031ba5,#ff004c,  
+	#e6036d, #fb0094,#ff6600, #04c2e4,#adad02, #00c3ff);
+	background-size: 300%;
+	width: calc(100% );
+	height: calc(100%);
+	z-index: -1;
+	animation: BGgradiente 15s ease infinite; 
+
+}
+
+@keyframes BGgradiente {
+	0% {
+		background-position: 0% 200%;
+	}
+	50% {
+		background-position: 200% 0%;
+	}
+	100% {
+		background-position: 0% 330%;
+	}
+}
+
+.ani_tour:after {
+	filter: brightness(1.4);
+	filter: drop-shadow(16px 16px 20px rgb(248, 220, 97));
+	filter: blur(15px);
+}
+
+.bordergif{
+	border-radius: 240px;
 }
