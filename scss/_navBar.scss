@@ -1,5 +1,5 @@
 
-.navbar{
+.navbar{margin: auto;
 	color:$color__titulos;
 	background-color:rgba(48, 57, 79, .5);
 	display: flex;
@@ -24,12 +24,13 @@
 						a {
 								font-family: $letra__footer;
 								display: flex;
+								flex-direction:column ;
 								align-items: center;
-								color: $color__blanco;
+								color: #FFFFFFFF;
 								text-decoration: none;
 								font-size: 2rem;
 								align-content: center;
-								filter: brightness(80%);
+								filter: brightness(100%);
 								transition: transform 0.5s;
 							
 								&:hover{
