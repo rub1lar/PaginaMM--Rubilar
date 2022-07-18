@@ -151,12 +151,7 @@ table {margin-top:2rem;
 .text-left{
 	text-align: left;
 }
-.blanco{border:solid;
-	border-color: $color__blanco;
-	border-width:.5rem;
-	border-image : 30px;
-		border-radius : 10px;
-}
+
 .paddingdere {
 	padding: 1rem 1rem 1rem 5rem;
 }
@@ -347,6 +342,8 @@ margin-bottom:8rem;
 	background-color:rgba(48, 57, 79, .5);
 	border-radius:40px;
 	border-color:#788199;
+	box-shadow: 0 0 8px rgba(48, 57, 79, 1.0), 
+			0 0 16px rgba(48, 57, 79, 1.0), 0 0 24px rgba(48, 57, 79, 1.0);
 }
 
 .contenedorimg{
@@ -399,4 +396,10 @@ margin-bottom:8rem;
 
 .bordergif{
 	border-radius: 240px;
+}
+.blanco{border:solid;
+	border-color: $color__blanco;
+	border-image : 44px;
+		border-radius : 10px;
+		padding:1rem;
 }
