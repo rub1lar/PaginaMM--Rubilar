@@ -15,7 +15,7 @@ html {
 }
 
 body {min-height: 100%; 
-	background-color:#121111FF;
+	background-color:#1f2124;
 }
 //fondo de galeria y discografia//
 
@@ -74,10 +74,8 @@ p { text-align: justify;
 	font-size: $letra__media;
 }
 h1{
-	//degradado//
-	font-weight: 500;
-	background: linear-gradient(to right, #0001FFFF, darkgrey,rgb(48, 57, 95) , $color__blanco, white
-	);
+font-weight:500;
+	background: linear-gradient(to right, #22bdc3,#4f2dfd, $color__blanco);
 		-webkit-background-clip:text;
 		background-clip:text;
 		-webkit-text-fill-color: transparent;
@@ -120,7 +118,7 @@ select {
 
 
 
-table {
+table {margin-top:2rem;
 	align-content: center;
 	max-width: 800px;
 	background-image: linear-gradient(135deg, rgb(48, 57, 79), rgb(48, 57, 89), rgb(48, 57, 95));
@@ -184,7 +182,7 @@ table {
 	margin: 4rem;
 }
 .boton-escuchar{
-	color:$color__blanco;
+	color:#00ADFFFF;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 1rem;
 	padding:.7rem;
@@ -202,7 +200,7 @@ table {
 		}
 }
 .boton__cancelar{
-	color:$color__blanco;
+	color:#00ADFFFF;
 	border-color:$color__blanco;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 1.4rem;
@@ -332,4 +330,10 @@ margin-bottom:8rem;
 	background-color:rgba(48, 57, 79, .5);
 	border-radius:40px;
 	border-color:#788199;
+}
+
+.contenedorimg{
+	padding-left: 9rem;
+	width: 80%;
+	height: auto;
 }
