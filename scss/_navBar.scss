@@ -1,7 +1,7 @@
 
 .navbar{
 	color:$color__titulos;
-	background-color:$color__nav_footer;
+	background-color:rgba(48, 57, 79, .5);
 	display: flex;
 	text-align: center;
 	top: 0;
@@ -11,17 +11,14 @@
 	justify-content: center;
 	z-index: 1;
 	position: fixed;
-
 		.container-fluid{
 				ul{ margin: auto;
 					align-content: center;
 					align-items: center;						
 					list-style: none;
 					font-size: 2rem;
-					padding: 1rem;
-					margin-top: 2rem;
-					
-					li{
+					li{align-content: center;
+					align-items: center;	
 						padding: 1.5rem;
 						
 						a {
@@ -34,7 +31,7 @@
 								align-content: center;
 								filter: brightness(80%);
 								transition: transform 0.5s;
-								height:.7vh;
+							
 								&:hover{
 									filter: brightness(160%);
 									transform: scale(1.2);
