@@ -88,6 +88,9 @@
 	}
 	.contenedor__grid {
 		@include grid (grid,100%, 100vh, 1, 0px);	
+		.caja__textomain {
+			width: 30vw;
+		}
 	}
 		//DISCOGRAFIA//
 		.contenedor__grid--disco{
@@ -134,6 +137,7 @@
 @media(min-width: 1024px) 
 {
 	.contenedor__grid {
+
 	}
 //CONTACTS//
 .contenedor__grid--contactos{

@@ -84,6 +84,8 @@
     height: 100vh;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 0px; }
+    .contenedor__grid .caja__textomain {
+      width: 30vw; }
   .contenedor__grid--disco {
     display: grid;
     width: 100%;
@@ -531,7 +533,6 @@ table {
     animation: moveX 3.05s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate; }
 
 .caja__textomain {
-  margin-bottom: 4rem;
   margin-left: 2rem;
   width: 55vw;
   box-shadow: 0 0 8px #30394f, 0 0 16px #30394f, 0 0 24px #30394f;
