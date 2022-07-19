@@ -226,9 +226,7 @@ header img{
 //------------pagina 404--------------//
 .contenedor{
 	background-image: url("../img/pagina_404/space1.jpg");
-	background-size:100%;
-	background-position: bottom;
-	object-fit: cover;
+	background-size:cover;
 	.luna {
 		display: inline-block;
 		height: 550px;
@@ -277,13 +275,13 @@ header img{
 
 //CAJA DEL TEXTO DE INDEX//
 .caja__textomain {
-	margin-bottom: 4rem;
+	margin-bottom:4rem;
 	margin-left: 2rem;
-	width: 65%;
+	width: 55vw;
 	box-shadow: 0 0 8px rgba(48, 57, 79, 1.0), 
 	0 0 16px rgba(48, 57, 79, 1.0), 0 0 24px rgba(48, 57, 79, 1.0);
-	border-radius: 3px;
-	background-color:rgba(255, 255, 240, .8);
+	border-radius: 8px;
+	background-color:rgba(0, 0, 0, 0.9);
 	border-color: black;
 	border:solid;
 }

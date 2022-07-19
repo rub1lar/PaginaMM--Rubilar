@@ -10,8 +10,7 @@
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 0;
     grid-template-rows: 7% 80% 10%;
-    background-image: url("../img/marilyn-manson.jpg");
-    background-position: bottom;
+    background-image: url("../img/pesa.jpg");
     background-size: cover;
     display: grid;
     width: 100%;
@@ -25,11 +24,9 @@
       align-content: flex-end;
       align-item: center;
       background: none; }
-      .contenedor__grid footer h5 {
-        color: black; }
       .contenedor__grid footer article img {
-        background-color: rgba(31, 33, 36, 0.4);
-        border-radius: 2px; }
+        background-color: rgba(255, 255, 255, 0.4);
+        border-radius: 5px; }
         .contenedor__grid footer article img:hover {
           background-color: rgba(255, 255, 255, 0.8); }
   .contenedor__grid--disco {
@@ -87,8 +84,6 @@
     height: 100vh;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 0px; }
-    .contenedor__grid .caja__textomain {
-      width: 37%; }
   .contenedor__grid--disco {
     display: grid;
     width: 100%;
@@ -498,9 +493,7 @@ table {
 
 .contenedor {
   background-image: url("../img/pagina_404/space1.jpg");
-  background-size: 100%;
-  background-position: bottom;
-  object-fit: cover; }
+  background-size: cover; }
   .contenedor .luna {
     display: inline-block;
     height: 550px; }
@@ -540,10 +533,10 @@ table {
 .caja__textomain {
   margin-bottom: 4rem;
   margin-left: 2rem;
-  width: 65%;
+  width: 55vw;
   box-shadow: 0 0 8px #30394f, 0 0 16px #30394f, 0 0 24px #30394f;
-  border-radius: 3px;
-  background-color: rgba(255, 255, 240, 0.8);
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.9);
   border-color: black;
   border: solid; }
 
