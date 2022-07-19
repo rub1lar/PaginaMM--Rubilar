@@ -5,40 +5,27 @@ footer {
 	font-size: 3.5rem;
 	font-weight:100 ; 
 	background-color: $color__nav_footer;
-}
+
 	h5 { font-size: $letra__chica;
 		color: $color__blanco;
 			animation: animation 5s linear infinite;
 			padding: 0.5rem 0.5rem 0.5rem 0.5rem;
 		}
-		@keyframes animation {
-			0%{
-				box-shadow: 0 0 0 0 rgba(203, 202,202, 5); box-shadow: 0 0 0 0 rgba(203, 202,202, 5);
-			}
-			30%{
-				box-shadow: 0 0 0 3px rgba(203, 202,202, 5);box-shadow: 0 0 0 0 rgba(203, 202,202, 5);
-			}
-			60%{
-				box-shadow: 0 0 0 3px rgba(203, 202,202, 5);box-shadow: 0 0 0 3px rgba(203, 202,202, 5);
-			}
-			95%{
-				box-shadow: 0 0 0 0 rgba(203, 202,202, 5);box-shadow: 0 0 0 3px rgba(203, 202,202, 5);
-			}
-		}
- 		article img {
+ 		article {
+ 			img {
 		filter: brightness(80%);
 		transition: transform .4s;
 		&:hover{
-			.animaciontour{}; 
-			.ani_tour{};
 			filter: brightness(100%);
 			transform: scale(1.1);
 			z-index: 1;
 			background-color:#3D3D3DFF;
 		border-radius:2px;	
+	}
 		}
 		}
 		
+		}
 
 
 

@@ -1,7 +1,8 @@
 //imports//
-@import "mixing";
+@import "_mixing";
 @import "_vars";
 @import "_mediaqueries";
+@import "_keyframes";
 @import "_navBar";
 @import "_footer";
 //configuracion general//
@@ -23,154 +24,129 @@ p {
 	width: 100%;
 	font-size: 1.5rem;
 }
-//fondo de galeria y discografia//
-
-.ani{
-	animation:anima 8s infinite linear alternate;
-}
-@keyframes anima{
-		0%{
-			background-position: 0% 50%;
-		}
-		50%{
-			background-position: 100% 50%;
-		}
-		100%{
-			background-position: 0% 50%;
-		}
-}
-
-
 header img{ 
 	
 	width: 100%;
 	height: 100%;
 	border-bottom-right-radius:25px;
-border-bottom-left-radius:25px;}
-main div div {
-	text-align: center;
-}
+	border-bottom-left-radius:25px;}
+	main div div {
+		text-align: center;
+	}
 
-main div article {
+	main div article {
 
-	width: 250px;
-	height: auto;
-	margin: 1rem 2rem 1rem 2rem;
-	object-fit: cover;
-	filter: brightness(80%);
-	transition: transform 0.7s;
+		width: 250px;
+		height: auto;
+		margin: 1rem 2rem 1rem 2rem;
+		object-fit: cover;
+		filter: brightness(80%);
+		transition: transform 0.7s;
 		&:hover{
 
 			filter: brightness(110%);
 			transform: scale(1.1);
 			z-index: 1;
 		}
-}
-main div article img {
-	border-radius:20px;
-box-shadow: 0 0 4px rgba(48, 57, 79, 1.0), 
-			0 0 13px rgba(48, 57, 79, 1.0), 0 0 30px rgba(48, 57, 79, 1.0);
-				&:hover{
-					transition-delay:1s;
-				border-radius:20px;
-			}
-}
-
-main div div a{
-
-
-			filter: brightness(80%);
-			transition: transform 1s;
-			&:hover{
-				filter: brightness(130%);
-				transform: scale(1.2);
-				z-index: 1;
-					}
+	}
+	main div article img {
+		border-radius:20px;
+		box-shadow: 0 0 4px rgba(48, 57, 79, 1.0), 
+		0 0 13px rgba(48, 57, 79, 1.0), 0 0 30px rgba(48, 57, 79, 1.0);
+		&:hover{
+			transition-delay:1s;
+			border-radius:20px;
 		}
+	}
 
-h1{
-font-weight:500;
-	background: linear-gradient(to right, #22bdc3,#4f2dfd, $color__blanco);
+	main div div a{
+
+
+		filter: brightness(80%);
+		transition: transform 1s;
+		&:hover{
+			filter: brightness(130%);
+			transform: scale(1.2);
+			z-index: 1;
+		}
+	}
+
+	h1{
+		font-weight:500;
+		background: linear-gradient(to right, #22bdc3,#4f2dfd, $color__blanco);
 		-webkit-background-clip:text;
 		background-clip:text;
 		-webkit-text-fill-color: transparent;
-}
-h2, h3 , h6{
-	color:map-get($map: $paletadecolor,$key:'dos');
-	font-size: bold;
-}
-h4 {
-	color:map-get($map: $paletadecolor,$key:'dos');
-	padding: 1rem 2rem 1rem 2rem;
-	text-align: center;
-	font-size: 1.5rem;
-	font-weight: 700;
-	font-family: 'Roboto', sans-serif;
-}
-
-textarea {
-	margin-left: 1rem;
-	margin-right: 1rem;
-	resize: none;
-	background-color:map-get($map: $paletadecolor,$key:'cuatro');
-}
-label {
-	font-size: $letra__media;
-	color:map-get($map: $paletadecolor,$key:'dos');
-	margin: 0.7rem;
-	margin-left: 18px;}
-input {
-	border-radius:4px;
-	margin-left: 1rem;
-	margin-right: 1rem;
-	background-color:map-get($map: $paletadecolor,$key:'cuatro');
-}
-
-select {
-	background-color:map-get($map: $paletadecolor,$key:'cuatro');
-}
-
-
-
-
-table {margin-top:2rem;
-	align-content: center;
-	max-width: 800px;
-	background-image: linear-gradient(135deg, rgb(48, 57, 79), rgb(48, 57, 89), rgb(48, 57, 95));
-	background-size: 500%;
-	animation: anima 8s infinite;
-	td{
-		font-size: $letra__chica;
-		text-align: center;
-		color: map-get($map: $paletadecolor,$key:'dos');
 	}
-	th{
-		text-align: center;
-		color: map-get($map: $paletadecolor,$key:'cuatro');
+	h2, h3 , h6{
+		color:map-get($map: $paletadecolor,$key:'dos');
+		font-size: bold;
 	}
-}
-.text-left{
-	text-align: left;
-}
+	h4 {
+		color:map-get($map: $paletadecolor,$key:'dos');
+		padding: 1rem 2rem 1rem 2rem;
+		text-align: center;
+		font-size: 1.5rem;
+		font-weight: 700;
+		font-family: 'Roboto', sans-serif;
+	}
 
-.paddingdere {
-	padding: 1rem 1rem 1rem 5rem;
-}
+	textarea {
+		margin-left: 1rem;
+		margin-right: 1rem;
+		resize: none;
+		background-color:map-get($map: $paletadecolor,$key:'cuatro');
+	}
+	label {
+		font-size: $letra__media;
+		color:map-get($map: $paletadecolor,$key:'dos');
+		margin: 0.7rem;
+		margin-left: 18px;
+	}
+	input {
+		border-radius:4px;
+		margin-left: 1rem;
+		margin-right: 1rem;
+		background-color:map-get($map: $paletadecolor,$key:'cuatro');
+	}
 
+	select {
+		background-color:map-get($map: $paletadecolor,$key:'cuatro');
+	}
 
-.paddingto{
-	margin: 5rem 0rem 0rem 0rem;
-}
-.paddingfo{
-	margin: 5rem 1rem 3rem 1rem;
-}
+	table {
+		margin-top:2rem;
+		align-content: center;
+		max-width: 800px;
+		background-image: linear-gradient(135deg, rgb(48, 57, 79), rgb(48, 57, 89), rgb(48, 57, 95));
+		background-size: 500%;
+		animation: anima 8s infinite;
+		td{
+			font-size: $letra__chica;
+			text-align: center;
+			color: map-get($map: $paletadecolor,$key:'dos');
+		}
+		th{
+			text-align: center;
+			color: map-get($map: $paletadecolor,$key:'cuatro');
+		}
+	}
 
+	.text-left{
+		text-align: left;
+	}
+	
+
+//---------tipos de flexs---------//
 .flex {
 	@include flex (flex, space-around, center , center ,columns, wrap);
 }
 
-.flexdisco {
-			@include flex (flex, space-evenly, flex-end, center ,columns, wrap);
+.flex__disco {
+	@include flex (flex, space-evenly, flex-end, center ,columns, wrap);
+}
+.flex_index{
+	@include flex (flex, space-around , flex-end, flex-end, columns, wrap);
 }
 
 //id areas del grid//
@@ -187,10 +163,12 @@ table {margin-top:2rem;
 
 	grid-area: footer;
 }
-
+//margen del carrusel//
 .carousel{
 	margin: 4rem;
 }
+
+//------botones-----//
 .boton-escuchar{
 	color:$color__blanco;
 	font-family: Arial, Helvetica, sans-serif;
@@ -204,13 +182,13 @@ table {margin-top:2rem;
 	font-weight: bold;
 	margin-left: 1rem;
 	filter: brightness(80%);
-		&:hover{
-			color: white;
-			box-shadow: 0 0 3px rgba(48, 57, 79, 1.0), 
-			0 0 10px rgba(48, 57, 79, 1.0), 0 0 20px rgba(48, 57, 79, 1.0);
-			filter: brightness(100%);
-			transition-delay:0.7s;
-		}
+	&:hover{
+		color: white;
+		box-shadow: 0 0 3px rgba(48, 57, 79, 1.0), 
+		0 0 10px rgba(48, 57, 79, 1.0), 0 0 20px rgba(48, 57, 79, 1.0);
+		filter: brightness(100%);
+		transition-delay:0.7s;
+	}
 }
 .boton__cancelar{
 	color:map-get($map: $paletadecolor,$key:'cuatro');
@@ -225,106 +203,94 @@ table {margin-top:2rem;
 	margin-left: 1rem;
 	transition: .3s ease all;
 	filter: brightness(80%);
-		&:hover{
-			background-color:darkred;
-			filter: brightness(100%);
-		}
+	&:hover{
+		background-color:darkred;
+		filter: brightness(100%);
+	}
 }
 //extend //
 .boton__enviar{ 
 	@extend .boton__cancelar;
-	filter: brightness(80%);
 	&:hover{
-			background-color:darkgreen;
-			filter: brightness(170%);
-		}
+		background-color:darkgreen;
+		filter: brightness(170%);
+	}
 }
+//boton hamburguesa color //
 .navbar-toggler {
 	background-color:#474747FF;
 	border-color: black;
 }
-//pagina 404//
+//fin de botones//
+
+//------------pagina 404--------------//
 .contenedor{
-	background-image: url("../img/space1.jpg");
-	background-size:100vh;
+	background-image: url("../img/pagina_404/space1.jpg");
+	background-size:100%;
+	background-position: bottom;
+	object-fit: cover;
 	.luna {
 		display: inline-block;
 		height: 550px;
 	}
 
 	.error4{
-	background-color: rgba(40,29, 123, .5);
-	color: red;
-	margin-top: 8rem;
-	   font-family: 'Press Start 2P', cursive;
-	border-radius:60px;
+		background-color: rgba(40,29, 123, .5);
+		color: red;
+		margin-top: 8rem;
+		font-family: 'Press Start 2P', cursive;
+		border-radius:60px;
 	}
 
 	.texto404{
-	font-size: $letra__supergrande;
+		font-size: $letra__supergrande;
 	}
 	.boton-404{
-	background-color: darkblue;
-	color: white;
-	border-color: black;
-	border: solid;
+		background-color: darkblue;
+		color: white;
+		border-color: black;
+		border: solid;
 	}
 	.nave {
-	display: block;
-	  width: 100px;
-	  height:auto;
-	  position: absolute;
-	  -webkit-animation: moveX 2.05s linear 0s infinite alternate, moveY 1.4s linear 0s infinite alternate;
-	  -moz-animation: moveX 2.05s linear 0s infinite alternate, moveY 1.4s linear 0s infinite alternate;
-	  -o-animation: moveX 2.05s linear 0s infinite alternate, moveY 1.4s linear 0s infinite alternate;
-	  animation: moveX 2.05s linear 0s infinite alternate, moveY 1.4s linear 0s infinite alternate;
-  }
+		display: block;
+		width: 100px;
+		height:auto;
+		position: absolute;
+		-webkit-animation: moveX 2.05s linear 0s infinite alternate, moveY 1.4s linear 0s infinite alternate;
+		-moz-animation: moveX 2.05s linear 0s infinite alternate, moveY 1.4s linear 0s infinite alternate;
+		-o-animation: moveX 2.05s linear 0s infinite alternate, moveY 1.4s linear 0s infinite alternate;
+		animation: moveX 2.05s linear 0s infinite alternate, moveY 1.4s linear 0s infinite alternate;
+	}
 	.astro{
 		z-index: 1;
-	display: block;
-	  width: 300px;
-	  height: auto;
-	  position: absolute;
-	  -webkit-animation: moveX 3.05s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
-	  -moz-animation: moveX 3.05s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
-	  -o-animation: moveX 3.05s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
-	  animation: moveX 3.05s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+		display: block;
+		width: 300px;
+		height: auto;
+		position: absolute;
+		-webkit-animation: moveX 3.05s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+		-moz-animation: moveX 3.05s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+		-o-animation: moveX 3.05s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+		animation: moveX 3.05s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
 	}
 }
-@-webkit-keyframes moveX {
-  from { left: 0; } to { left: 780px; }
-}
-@-moz-keyframes moveX {
-  from { left: 0; } to { left: 780px; }
-}
-@-o-keyframes moveX {
-  from { left: 0; } to { left: 780px; }
-}
-@keyframes moveX {
-  from { left: 0; } to { left: 780px; }
-}
-@-webkit-keyframes moveY {
-  from { top: 0; } to { top: 280px; }
-}
-@-moz-keyframes moveY {
-  from { top: 0; } to { top: 280px; }
-}
-@-o-keyframes moveY {
-  from { top: 0; } to { top: 280px; }
-}
-@keyframes moveY {
-  from { top: 0; } to { top: 280px; }
+// fin de pagina 404///
+
+//CAJA DEL TEXTO DE INDEX//
+.caja__textomain {
+	margin-bottom: 4rem;
+	margin-left: 2rem;
+	width: 65%;
+	box-shadow: 0 0 8px rgba(48, 57, 79, 1.0), 
+	0 0 16px rgba(48, 57, 79, 1.0), 0 0 24px rgba(48, 57, 79, 1.0);
+	border-radius: 3px;
+	background-color:rgba(255, 255, 240, .8);
+	border-color: black;
+	border:solid;
 }
 
-.negrito{
-	background-color: #030205FF;
-}
-.imgm{
-	width:100vw;
-	height: auto
-	;
-	border-radius:5px;
-}
+
+
+//caja de formulario en contactos//
 .contenedor_contactos-fondo{
 	margin:1rem;
 	padding: 1.5rem;
@@ -332,21 +298,19 @@ table {margin-top:2rem;
 	border-radius:40px;
 	border-color:#788199;
 	box-shadow: 0 0 8px rgba(48, 57, 79, 1.0), 
-			0 0 16px rgba(48, 57, 79, 1.0), 0 0 24px rgba(48, 57, 79, 1.0);
+	0 0 16px rgba(48, 57, 79, 1.0), 0 0 24px rgba(48, 57, 79, 1.0);
 }
-
-.contenedorimg{
-	padding-left: 9rem;
+//contenedor de imagen marilyn manson en tour//
+.contenedor__img--tour{
 	width: 80%;
 	height: auto;
 }
 
-
 //------borde animado--//
-
-
-
-.animaciontour {
+.ani{
+	animation:anima 8s infinite linear alternate;
+}
+.animacion__tour {
 	position: relative;
 }
 
@@ -356,7 +320,7 @@ table {margin-top:2rem;
 	left: 0px;
 	top: 0px;
 	background: linear-gradient(124deg, #79fb00, #8d01a0, #031ba5,#ff004c,  
-	#e6036d, #fb0094,#ff6600, #04c2e4,#adad02, #00c3ff);
+		#e6036d, #fb0094,#ff6600, #04c2e4,#adad02, #00c3ff);
 	background-size: 300%;
 	width: calc(100% );
 	height: calc(100%);
@@ -364,40 +328,18 @@ table {margin-top:2rem;
 	animation: BGgradiente 15s ease infinite; 
 
 }
-
-@keyframes BGgradiente {
-	0% {
-		background-position: 0% 200%;
-	}
-	50% {
-		background-position: 200% 0%;
-	}
-	100% {
-		background-position: 0% 330%;
-	}
-}
-
 .ani_tour:after {
 	filter: brightness(1.4);
 	filter: drop-shadow(16px 16px 20px rgb(248, 220, 97));
 	filter: blur(15px);
 }
+///FIN BORDE ANIMADO//
 
-.bordergif{
-	border-radius: 240px;
-}
-.blanco{border:solid;
+//BORDE BLANCO DE GALERIA DE FOTOS//
+.borde__blanco{border:solid;
 	border-color: $color__blanco;
 	border-image : 44px;
-		border-radius : 10px;
-		padding:1rem;
-}
-
-.cajaa{
-	width: 50%;
-box-shadow: 0 0 8px rgba(48, 57, 79, 1.0), 
-			0 0 16px rgba(48, 57, 79, 1.0), 0 0 24px rgba(48, 57, 79, 1.0);
-background-color:rgba(0, 0, 4, .9) ;
-border-radius: 13px;
+	border-radius : 10px;
+	padding:1rem;
 }
 
