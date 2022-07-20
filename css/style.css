@@ -354,7 +354,7 @@ main div div a {
 
 h1 {
   font-weight: 500;
-  background: linear-gradient(to right, #22bdc3, #4f2dfd, #D9DBDE);
+  background: linear-gradient(to right, white, #ECECE8, #5E5E5EFF, #5E5E5EFF, #D9DBDE, white);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent; }
@@ -541,7 +541,7 @@ table {
   width: 55vw;
   box-shadow: 0 0 8px #30394f, 0 0 16px #30394f, 0 0 24px #30394f;
   border-radius: 8px;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.6);
   border-color: black;
   border: solid; }
 
@@ -568,7 +568,7 @@ table {
   position: absolute;
   left: 0px;
   top: 0px;
-  background: linear-gradient(124deg, #79fb00, #8d01a0, #031ba5, #ff004c, #e6036d, #fb0094, #ff6600, #04c2e4, #adad02, #00c3ff);
+  background: linear-gradient(120deg, #757575FF, black, #E8E8E8FF, #00022DFF, #041E00FF, #13002DFF);
   background-size: 300%;
   width: calc(100%);
   height: calc(100%);
