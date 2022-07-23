@@ -3,9 +3,8 @@
 {
 	.contenedor__grid {
 		@include grid (grid,100%, 100vh, 1, 0);
-		grid-template-rows:7% 80% 10%;	
-		background-image:url("../img/pesa.jpg");
-		background-size: cover;
+		grid-template-rows:7% 80% 10%;
+		background-image:url("../img/mi.jpg");
 
 		footer {
 			display: flex;
@@ -59,8 +58,8 @@
 	.contenedor__grid--contactos{
 		@include grid (grid,100%, 100vh, 1, 0);	
 		grid-template-areas:
-		"nav" "header" "main" "footer";
-		/*	background-image: map-get($map: $paletadefondos,$key:'tres');*/
+		"nav" "header" "main" "aside" "footer";
+		background-color: black;
 	}
 	#form {
 		display: flex !important;
@@ -76,10 +75,8 @@
 { 
 	.navbar{
 		height: 9vh;
-		padding-top: 1.5rem;
-		
-	}
-	nav div ul li {
+		padding-top: 1.5rem;}
+		nav div ul li {
 		display: inline-block;
 		align-content: center;
 		justify-content: center;
@@ -120,7 +117,8 @@
 			" main header"
 			"footer footer";
 			h1{
-				margin-top:8rem;
+				font-size: 4rem;
+				margin:4rem;
 			}
 
 		}
@@ -128,8 +126,11 @@
 	.contenedor__grid--contactos{
 		@include grid (grid,100%, 100vh, 2, 7px);
 		grid-template-areas: 
-		"nav nav " "header header" 
-		"main main" "footer footer";
+		"nav nav " 
+		"header header" 
+		"main main" 
+		"aside aside"
+		"footer footer";
 	}
 }
 
@@ -145,7 +146,7 @@
 	grid-template-areas: 
 	"nav nav"
 	"header header"
-	"main main"
+	"main aside"
 	"footer footer";
 }
 			//TOUR//
@@ -154,6 +155,8 @@
 				"nav nav " "main header" 
 				"footer footer";
 				grid-gap:5px;
+				
+
 			}
 			//GALERIA//		
 			.contenedor__grid--galeria{

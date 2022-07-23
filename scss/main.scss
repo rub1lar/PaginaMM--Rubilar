@@ -16,8 +16,9 @@ html {
 }
 
 body {min-height: 100%; 
-
+background-size: cover;
 	background-color:#1f2124;
+	background-attachment: fixed;
 }
 p {
 	font-weight: 600;
@@ -25,7 +26,6 @@ p {
 	font-size: 1.5rem;
 }
 header img{ 
-	
 	width: 100%;
 	height: 100%;
 	border-bottom-right-radius:25px;
@@ -33,19 +33,15 @@ header img{
 	main div div {
 		text-align: center;
 	}
-
-	main div article {
-
+	main div article 
+	{
 		width: 250px;
 		height: auto;
 		margin: 1rem 2rem 1rem 2rem;
 		object-fit: cover;
 		filter: brightness(80%);
-		transition: transform 0.7s;
 		&:hover{
-
 			filter: brightness(110%);
-			transform: scale(1.1);
 			z-index: 1;
 		}
 	}
@@ -58,10 +54,8 @@ header img{
 			border-radius:20px;
 		}
 	}
-
 	main div div a{
-
-
+		text-align: center;
 		filter: brightness(80%);
 		transition: transform 1s;
 		&:hover{
@@ -117,26 +111,30 @@ header img{
 		background-color:map-get($map: $paletadecolor,$key:'cuatro');
 		border-radius:10px;
 	}
+	table{ 
+		padding-left: 1rem;
+		margin-bottom: 3rem;
+	display: flex;
+	border:solid 2px rgba(255, 255, 255, .7);
+	color: $color__blanco;
+	align-items:center;
+	justify-content: center;
+				tr , th{
+					font-size: 1.8rem;
+					text-align: center;
+					padding-bottom: 1rem;
+				}
+				td{text-align: center;
+						font-size: 1.7rem;
+						padding:0.5rem;
+				}
+				}
+	
 
-	table {
-		margin-top:2rem;
-		align-content: center;
-		max-width: 800px;
-		background-image: linear-gradient(135deg, rgb(48, 57, 79), rgb(48, 57, 89), rgb(48, 57, 95));
-		background-size: 500%;
-		
-		animation: anima 8s infinite;
-		td{
-			font-size: $letra__chica;
-			text-align: center;
-			color: map-get($map: $paletadecolor,$key:'dos');
-		}
-		th{
-			text-align: center;
-			color: map-get($map: $paletadecolor,$key:'cuatro');
-		}
-	}
 
+
+
+					
 	.text-left{
 		text-align: left;
 	}
@@ -167,6 +165,9 @@ header img{
 #footer{
 
 	grid-area: footer;
+}
+#aside {
+	grid-area: aside;
 }
 //margen del carrusel//
 .carousel{
@@ -222,13 +223,11 @@ header img{
 	}
 }
 //boton hamburguesa color //
-.navbar-toggler {
-	background-color:#474747FF;
-	border-color: black;
-}
+
 //fin de botones//
 
 //------------pagina 404--------------//
+
 .contenedor{
 	background-image: url("../img/pagina_404/space1.jpg");
 	background-size:cover;
@@ -345,3 +344,7 @@ header img{
 	padding:1rem;
 }
 
+.w-100 {
+	height: 500px;
+	object-fit: cover;
+}

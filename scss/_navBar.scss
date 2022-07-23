@@ -12,6 +12,10 @@
 	justify-content: center;
 	z-index: 1;
 	position: fixed;
+	.navbar-toggler {
+	background-color:#474747FF;
+	border-color: black;
+}	
 	.container-fluid{
 		ul{ margin: auto;
 			align-content: center;
