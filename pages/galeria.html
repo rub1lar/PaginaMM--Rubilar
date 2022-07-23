@@ -15,6 +15,7 @@
   </title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body class="contenedor__grid--galeria">
 	<nav id="nav" class="navbar navbar-expand-md">
@@ -45,10 +46,10 @@
     </div>
   </div>
 </nav>
-<header id="header"> 
+<header id="header"  data-aos="zoom-in-up"> 
  <img  src="../img/hh.jpg" alt="marilyn manson foto header">	
 </header>
-<main  id="main">
+<main  id="main"  data-aos="zoom-in-up">
 
   <div >
     <div id="carouselExampleControls" class="carousel slide borde__blanco animacion__tour ani_tour" data-bs-ride="carousel">
@@ -110,7 +111,7 @@
     </div>
     <div>
     <h2 class="text-center">MIRA LAS ULTIMAS IMAGENES Y ENTERATE DE TODO EN SUS REDES SOCIALES!</h2>
-    <div class="flex pb-4 m-4 borde__blanco"> 
+    <div  data-aos="zoom-in-up" class="flex pb-4 m-4 borde__blanco"> 
             <iframe width="360" height="300" src="https://www.instagram.com/p/CG89qraAVjb/embed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
           <a class="twitter-timeline" data-lang="es" data-width="360" data-height="300" data-theme="dark" href="https://twitter.com/marilynmanson?ref_src=twsrc%5Etfw">Tweets by marilynmanson</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
           </div>
@@ -144,5 +145,9 @@
 </div>
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>

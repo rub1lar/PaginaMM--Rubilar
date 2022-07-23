@@ -15,9 +15,10 @@
 	</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<body class="contenedor__grid--tour">
+<body class="contenedor__grid--tour " >
 	<nav id="nav" class="navbar navbar-expand-md">
 		<div class="container-fluid"> 
 			<!-- este es el boton hamburguesa q rico -->
@@ -49,10 +50,10 @@
 
 
 	<!---FIN DEL NAVE--->
-	<header id="header" >
+	<header  data-aos="zoom-in-up" id="header" >
 		<img src="../img/ww.png" alt="marilyn manson foto " 	> 
 	</header>	<!-- FIN DEL HEADER (UNA IMAGEN)---->
-	<main id="main" class="flex">
+	<main data-aos="zoom-in-up" id="main" class="flex">
 		<h1 class="text-center">HISTORIAL DE TOURS</h1> 
 		<div class="cont__tour">
 		<table class="m-5 ">
@@ -123,5 +124,9 @@
 		</footer>
 		<!-- JavaScript Bundle with Popper -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+  AOS.init();
+</script>
 	</body>
 	</html>
