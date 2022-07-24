@@ -238,6 +238,8 @@ header img{
 //------------pagina 404--------------//
 
 .contenedor{
+	width: 100vw;
+	height: 100%;
 	background-image: url("../img/pagina_404/space1.jpg");
 	background-size:cover;
 	.luna {
@@ -247,10 +249,9 @@ header img{
 
 	.error4{
 		background-color: rgba(40,29, 123, .5);
-		color: red;
 		margin-top: 8rem;
 		font-family: 'Press Start 2P', cursive;
-		border-radius:60px;
+		border-radius:14px;
 	}
 
 	.texto404{

@@ -89,8 +89,12 @@
 	}
 	.contenedor__grid {
 		@include grid (grid,100%, 100vh, 1, 0px);	
+		background-image:url("../img/ma.jpg");
+
 		.caja__textomain {
 			width: 30vw;
+			background-image:url("../img/ma.jpg");
+
 		}
 	}
 		//DISCOGRAFIA//
