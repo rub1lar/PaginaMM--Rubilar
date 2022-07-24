@@ -53,20 +53,24 @@
 		@include grid (grid,100%, 100vh, 1, 0);	
 		grid-template-areas:
 		"nav" "header" "main" "footer";
+			h1 {
+			padding-top:3rem;
+		}
+
 	}
 	//CONTACTO//
 	.contenedor__grid--contactos{
-		@include grid (grid,100%, 100vh, 1, 0);	
+		@include grid (grid,100vw, 100vh, 1, 0);	
 		grid-template-areas:
 		"nav" "header" "main" "aside" "footer";
-		background-color: black;
 	}
 	#form {
 		display: flex !important;
-		margin-top: 0;
+		margin-top: 20px;
+		margin-bottom: 20px;
 		flex-direction: column;
 		justify-content: center;
-		width: 80%;
+		width: 90%;
 	}
 }
 /*media queries 768 HOME*/
@@ -125,13 +129,17 @@
 		}
 	//CONTACTO//
 	.contenedor__grid--contactos{
-		@include grid (grid,100%, 100vh, 2, 7px);
+		@include grid (grid,100vw, 100vh, 2, 7px);
 		grid-template-areas: 
 		"nav nav " 
 		"header header" 
 		"main main" 
 		"aside aside"
 		"footer footer";
+		#form {
+		width:80vw;
+	}
+	
 	}
 }
 
@@ -143,12 +151,15 @@
 	}
 //CONTACTS//
 .contenedor__grid--contactos{
-	@include grid (grid,100%, 100vh, 2, 9px);
+	@include grid (grid,100vw, 100vh, 2, 9px);
 	grid-template-areas: 
 	"nav nav"
 	"header header"
 	"main aside"
 	"footer footer";
+		#form {
+		width:45vw;
+	}
 }
 			//TOUR//
 			.contenedor__grid--tour{

@@ -15,9 +15,10 @@ html {
 	font-size: 62.5%;
 }
 
-body {min-height: 100%; 
+body {width: 100vw;
+	height: 100%; 
 background-size: cover;
-	background-color:#1f2124;
+	background-color:black;
 	background-attachment: fixed;
 }
 p {
@@ -25,11 +26,18 @@ p {
 	width: 100%;
 	font-size: 1.5rem;
 }
-header img{ 
+aside img {
+	width: 100%;
+	border-top-right-radius:25px;
+	border-top-left-radius:25px;
+}
+
+header img{
 	width: 100%;
 	height: 100%;
 	border-bottom-right-radius:25px;
-	border-bottom-left-radius:25px;}
+	border-bottom-left-radius:25px;
+	object-fit: cover;}
 	main div div {
 		text-align: center;
 	}
@@ -112,6 +120,7 @@ header img{
 		border-radius:10px;
 	}
 	table{ 
+		
 		padding-left: 1rem;
 		margin-bottom: 3rem;
 	display: flex;
