@@ -82,6 +82,9 @@
     grid-gap: 0px; }
     .contenedor__grid main {
       background-image: url("../img/we.webp"); }
+      .contenedor__grid main p {
+        width: 95%;
+        font-size: 1.5rem; }
   .contenedor__grid--disco {
     display: grid;
     width: 100%;
@@ -327,9 +330,8 @@ body {
 p {
   text-align: center;
   color: #D9DBDE;
-  width: 70%;
-  font-size: 1.5rem;
-  font-weight: bold; }
+  width: 95%;
+  font-size: 1.1rem; }
 
 aside img {
   width: 25vw;
@@ -572,7 +574,7 @@ table {
 
 .contenedor_index-fondo {
   background-color: rgba(0, 3, 4, 0.9);
-  width: 80%; }
+  width: 88%; }
 
 .contenedor__img--tour {
   width: 80%;

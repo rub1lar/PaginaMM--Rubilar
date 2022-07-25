@@ -24,9 +24,9 @@ background-size: cover;
 p {
 	text-align: center;
 	color:$color__blanco;
-	width: 70%;
-	font-size: 1.5rem;
-	font-weight: bold;
+	width: 95%;
+	font-size: 1.1rem;
+	
 }
 aside img {
 	width: 25vw;
@@ -306,7 +306,7 @@ header img{
 .contenedor_index-fondo{
 	@extend .contenedor_contactos-fondo;
 	background-color:rgba(0, 3, 4, .9);
-	width: 80%;
+	width: 88%;
 
 }
 //contenedor de imagen marilyn manson en tour//
