@@ -22,9 +22,11 @@ background-size: cover;
 	background-attachment: fixed;
 }
 p {
-	font-weight: 600;
-	width: 100%;
+	text-align: center;
+	color:$color__blanco;
+	width: 70%;
 	font-size: 1.5rem;
+	font-weight: bold;
 }
 aside img {
 	width: 25vw;
@@ -147,6 +149,9 @@ header img{
 	.text-left{
 		text-align: left;
 	}
+	.text-right{
+		text-align: right;
+	}
 	
 
 //---------tipos de flexs---------//
@@ -158,7 +163,8 @@ header img{
 	@include flex (flex, space-evenly, flex-end, center ,columns, wrap);
 }
 .flex_index{
-	@include flex (flex, space-around , flex-end, flex-end, columns, wrap);
+	@include flex (flex, space-around , center, center,columns, wrap);
+	flex-direction: column;
 }
 
 //id areas del grid//
@@ -287,20 +293,6 @@ header img{
 }
 // fin de pagina 404///
 
-//CAJA DEL TEXTO DE INDEX//
-.caja__textomain {
-	margin-left: 2rem;
-	width: 55vw;
-	box-shadow: 0 0 8px rgba(48, 57, 79, 1.0), 
-	0 0 16px rgba(48, 57, 79, 1.0), 0 0 24px rgba(48, 57, 79, 1.0);
-	border-radius: 8px;
-	background-color:rgba(0, 0, 0, 0.6);
-	border-color: black;
-	border:solid;
-}
-
-
-
 //caja de formulario en contactos//
 .contenedor_contactos-fondo{
 	margin:1rem;
@@ -310,6 +302,12 @@ header img{
 	border-color:#788199;
 	box-shadow: 0 0 8px rgba(48, 57, 79, 1.0), 
 	0 0 16px rgba(48, 57, 79, 1.0), 0 0 24px rgba(48, 57, 79, 1.0);
+}
+.contenedor_index-fondo{
+	@extend .contenedor_contactos-fondo;
+	background-color:rgba(0, 3, 4, .9);
+	width: 80%;
+
 }
 //contenedor de imagen marilyn manson en tour//
 .contenedor__img--tour{
@@ -353,7 +351,6 @@ header img{
 	border-radius : 10px;
 	padding:1rem;
 }
-
 .w-100 {
 	height: 300px;
 	object-fit: cover;

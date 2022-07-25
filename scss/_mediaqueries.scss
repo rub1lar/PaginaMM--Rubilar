@@ -3,9 +3,12 @@
 {
 	.contenedor__grid {
 		@include grid (grid,100%, 100vh, 1, 0);
-		grid-template-rows:7% 80% 10%;
-		background-image:url("../img/mi.jpg");
+		grid-template-areas: "nav" "header" "main" "footer";
+		main {
+			background-image: url("../img/gig.webp");
 
+		}
+			
 		footer {
 			display: flex;
 			align-content: flex-end;
@@ -21,12 +24,7 @@
 				}
 			}
 		}
-		@include grid (grid,100%, 100vh, 1, 0);	
-		grid-template-areas:
-		"nav"  "main" 
-		"footer";
 		/*	background-image: map-get($map: $paletadefondos,$key:'uno');*/
-		
 	}
 	//discografia//
 	.contenedor__grid--disco{
@@ -89,13 +87,13 @@
 	}
 	.contenedor__grid {
 		@include grid (grid,100%, 100vh, 1, 0px);	
-		background-image:url("../img/ma.jpg");
-
-		.caja__textomain {
-			width: 30vw;
-			background-image:url("../img/ma.jpg");
+		main {
+			background-image: url("../img/we.webp");
 
 		}
+		
+
+	
 	}
 		//DISCOGRAFIA//
 		.contenedor__grid--disco{
