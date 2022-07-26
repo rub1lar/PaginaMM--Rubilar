@@ -167,6 +167,7 @@ header img{
 	flex-direction: column;
 }
 
+
 //id areas del grid//
 #nav {
 	grid-area: nav;
@@ -243,17 +244,13 @@ header img{
 
 //------------pagina 404--------------//
 
-.contenedor{
+/*.contenedor{
+	top: 50%;
+	position:absolute;
 	width: 100vw;
-	height: 100%;
-	background-image: url("../img/pagina_404/space1.jpg");
-	object-fit: cover;
-	.luna {
-		display: inline-block;
-		height: 550px;
-	}
-
+	text-align: center;
 	.error4{
+		width: 50%;
 		background-color: rgba(40,29, 123, .5);
 		font-family: 'Press Start 2P', cursive;
 		border-radius:14px;
@@ -268,30 +265,43 @@ header img{
 		border-color: black;
 		border: solid;
 	}
-	.nave {
-		display: block;
-		width: 100px;
-		height:auto;
-		position: absolute;
-		-webkit-animation: moveX 2.05s linear 0s infinite alternate, moveY 1.4s linear 0s infinite alternate;
-		-moz-animation: moveX 2.05s linear 0s infinite alternate, moveY 1.4s linear 0s infinite alternate;
-		-o-animation: moveX 2.05s linear 0s infinite alternate, moveY 1.4s linear 0s infinite alternate;
-		animation: moveX 2.05s linear 0s infinite alternate, moveY 1.4s linear 0s infinite alternate;
+}*/
+// fin de pagina 404///()
+.body404{
+	height: 100vh;
+	display: flex;
+	align-items:center;
+	justify-content: center;
+	background-image: url("../img/gig.webp") ;
+background-size: contain;}
+.container404{
+	border-radius: 15px;
+	text-align: center;
+width: 100%;
+max-width: 500px;
+padding:20px;
+background:$color__nav_footer}
+	h1{
+	font-size: 10rem;
+	font-weight: 900;
+	margin: 0;
+	font-weight: 900;
+	letter-spacing: 20px;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
 	}
-	.astro{
-		z-index: 1;
-		display: block;
-		width: 300px;
-		height: auto;
-		position: absolute;
-		-webkit-animation: moveX 3.05s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
-		-moz-animation: moveX 3.05s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
-		-o-animation: moveX 3.05s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
-		animation: moveX 3.05s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+	h2{
+		font-size: 40px;
 	}
-}
-// fin de pagina 404///
-
+	p{
+		font-size: 2rem;
+	}
+.boton-404{
+		background-color: #0F0F0FFF;
+		color: $color__blanco;
+		border-color: $color__negro;
+		border: solid;
+	}
 //caja de formulario en contactos//
 .contenedor_contactos-fondo{
 	margin:1rem;
@@ -316,9 +326,7 @@ header img{
 }
 
 //------borde animado--//
-.ani{
-	animation:anima 8s infinite linear alternate;
-}
+
 .animacion__tour {
 	position: relative;
 }
