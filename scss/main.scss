@@ -25,7 +25,7 @@ p {
 	text-align: center;
 	color:$color__blanco;
 	width: 95%;
-	font-size: 1.1rem;
+	font-size: 1.5rem;
 	
 }
 aside img {
@@ -87,6 +87,9 @@ header img{
 		background-clip:text;
 		-webkit-text-fill-color: transparent;
 	}
+	h2{
+		font-size: 2rem;
+	}
 	h2, h3 , h6{
 		color:map-get($map: $paletadecolor,$key:'dos');
 		font-size: bold;
@@ -147,7 +150,8 @@ header img{
 	}
 	
 	#cuatro{
-		font-size: 14rem;
+			font-size: 14rem;
+		
 	}
 
 
@@ -289,12 +293,7 @@ header img{
 		max-width: 500px;
 		padding:20px;
 		background:$color__nav_footer}
-		h2{
-			font-size: 40px;
-		}
-		p{
-			font-size: 2rem;
-		}
+	
 		.boton-404{
 			background-color: #0F0F0FFF;
 			color: $color__blanco;

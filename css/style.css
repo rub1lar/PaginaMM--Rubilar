@@ -339,7 +339,7 @@ p {
   text-align: center;
   color: #D9DBDE;
   width: 95%;
-  font-size: 1.1rem; }
+  font-size: 1.5rem; }
 
 aside img {
   width: 25vw;
@@ -392,6 +392,9 @@ h1 {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent; }
+
+h2 {
+  font-size: 2rem; }
 
 h2, h3, h6 {
   color: #D9DBDE;
@@ -576,12 +579,6 @@ table {
   max-width: 500px;
   padding: 20px;
   background: rgba(48, 57, 79, 0.8); }
-
-h2 {
-  font-size: 40px; }
-
-p {
-  font-size: 2rem; }
 
 .boton-404 {
   background-color: #0F0F0FFF;
