@@ -12,10 +12,20 @@
 	justify-content: center;
 	z-index: 1;
 	position: fixed;
+	.nav-link{
+		font-size: 2rem;
+		padding-bottom: 2rem;
+		color:$color__negro;
+		font-size: bold;
+		font-weight: 400;
+		font-family:$letra__footer;
+		transition: transform .3s ease-in-out;
+
+	}
 	.navbar-toggler {
-	background-color:#474747FF;
-	border-color: black;
-}	
+		background-color:#474747FF;
+		border-color: black;
+	}	
 	.container-fluid{
 		ul{ margin: auto;
 			align-content: center;

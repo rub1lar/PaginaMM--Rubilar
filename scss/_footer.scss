@@ -9,24 +9,24 @@ footer {
 
 	h5 { font-size: $letra__chica;
 		color: $color__blanco;
-			animation: animation 5s linear infinite;
-			padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-		}
- 		article {
- 			img {
-		filter: brightness(80%);
-		transition: transform .4s;
-		&:hover{
-			filter: brightness(100%);
-			transform: scale(1.1);
-			z-index: 1;
-			background-color:#3D3D3DFF;
-		border-radius:2px;	
+		animation: animation 5s linear infinite;
+		padding: 0.5rem 0.5rem 0.5rem 0.5rem;
 	}
+	article {
+		img {
+			filter: brightness(80%);
+			transition: transform .4s;
+			&:hover{
+				filter: brightness(100%);
+				transform: scale(1.1);
+				z-index: 1;
+				background-color:#3D3D3DFF;
+				border-radius:2px;	
+			}
 		}
-		}
-		
-		}
+	}
+	
+}
 
 
 

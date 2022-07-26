@@ -8,7 +8,7 @@
 			background-image: url("../img/gig.webp");
 
 		}
-			
+		
 		footer {
 			display: flex;
 			align-content: flex-end;
@@ -51,7 +51,7 @@
 		@include grid (grid,100%, 100vh, 1, 0);	
 		grid-template-areas:
 		"nav" "header" "main" "footer";
-			h1 {
+		h1 {
 			padding-top:3rem;
 		}
 
@@ -79,26 +79,26 @@
 		height: 9vh;
 		padding-top: 1.5rem;}
 		nav div ul li {
-		display: inline-block;
-		align-content: center;
-		justify-content: center;
-		alignment-baseline: central;
-		
-	}
-	.contenedor__grid {
-		@include grid (grid,100%, 100vh, 1, 0px);	
-		main {
-			background-image: url("../img/we.webp");
-			p {
-			width: 95%;
-			font-size: 1.5rem;
-}
-
+			display: inline-block;
+			align-content: center;
+			justify-content: center;
+			alignment-baseline: central;
+			
 		}
-		
+		.contenedor__grid {
+			@include grid (grid,100%, 100vh, 1, 0px);	
+			main {
+				background-image: url("../img/we.webp");
+				p {
+					width: 95%;
+					font-size: 1.5rem;
+				}
 
-	
-	}
+			}
+			
+
+			
+		}
 		//DISCOGRAFIA//
 		.contenedor__grid--disco{
 			@include grid (grid,100%, 100vh, 3, 7px);
@@ -116,9 +116,9 @@
 			"nav nav nav nav" "header header header header"
 			"main main main main" "footer footer footer footer";	
 			.w-100 {
-			height: 400px;}
-		}
-		
+				height: 400px;}
+			}
+			
 		//TOUR//
 		.contenedor__grid--tour{
 			@include grid (grid,100%, 100vh, 2,7px );
@@ -143,9 +143,9 @@
 		"aside aside"
 		"footer footer";
 		#form {
-		width:80vw;
-	}
-	
+			width:80vw;
+		}
+		
 	}
 }
 
@@ -163,7 +163,7 @@
 	"header header"
 	"main aside"
 	"footer footer";
-		#form {
+	#form {
 		width:45vw;
 	}
 }
@@ -184,10 +184,10 @@
 				"header header header header"
 				"main main main main"
 				"footer footer footer footer";
-					.w-100 {
-				height: 660px;
-				object-fit: cover;
-}
+				.w-100 {
+					height: 660px;
+					object-fit: cover;
+				}
 			}
 			
 		//discografia//

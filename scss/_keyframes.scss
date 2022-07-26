@@ -48,15 +48,15 @@
 	}
 }
 @keyframes animation {
-			0%{
-				box-shadow: 0 0 0 0 rgba(203, 202,202, 5); box-shadow: 0 0 0 0 rgba(203, 202,202, 5);
-			}
-			30%{
-				box-shadow: 0 0 0 3px rgba(203, 202,202, 5);box-shadow: 0 0 0 0 rgba(203, 202,202, 5);
-			}
-			60%{
-				box-shadow: 0 0 0 3px rgba(203, 202,202, 5);box-shadow: 0 0 0 3px rgba(203, 202,202, 5);
-			}
-			95%{
-				box-shadow: 0 0 0 0 rgba(203, 202,202, 5);box-shadow: 0 0 0 3px rgba(203, 202,202, 5);
-			}}
+	0%{
+		box-shadow: 0 0 0 0 rgba(203, 202,202, 5); box-shadow: 0 0 0 0 rgba(203, 202,202, 5);
+	}
+	30%{
+		box-shadow: 0 0 0 3px rgba(203, 202,202, 5);box-shadow: 0 0 0 0 rgba(203, 202,202, 5);
+	}
+	60%{
+		box-shadow: 0 0 0 3px rgba(203, 202,202, 5);box-shadow: 0 0 0 3px rgba(203, 202,202, 5);
+	}
+	95%{
+		box-shadow: 0 0 0 0 rgba(203, 202,202, 5);box-shadow: 0 0 0 3px rgba(203, 202,202, 5);
+	}}
