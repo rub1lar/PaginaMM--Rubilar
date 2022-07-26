@@ -383,7 +383,11 @@ main div div a {
     z-index: 1; }
 
 h1 {
-  font-weight: 500;
+  font-size: 3rem;
+  font-weight: 900;
+  margin: 0;
+  font-weight: 900;
+  letter-spacing: 10px;
   background: linear-gradient(to right, white, #ECECE8, #5E5E5EFF, #5E5E5EFF, #D9DBDE, white);
   -webkit-background-clip: text;
   background-clip: text;
@@ -442,6 +446,9 @@ table {
     text-align: center;
     font-size: 1.7rem;
     padding: 0.5rem; }
+
+#cuatro {
+  font-size: 14rem; }
 
 .text-left {
   text-align: left; }
@@ -553,7 +560,7 @@ table {
 		border-color: black;
 		border: solid;
 	}
-}*/
+	}*/
 .body404 {
   height: 100vh;
   display: flex;
@@ -569,15 +576,6 @@ table {
   max-width: 500px;
   padding: 20px;
   background: rgba(48, 57, 79, 0.8); }
-
-h1 {
-  font-size: 10rem;
-  font-weight: 900;
-  margin: 0;
-  font-weight: 900;
-  letter-spacing: 20px;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text; }
 
 h2 {
   font-size: 40px; }
