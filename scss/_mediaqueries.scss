@@ -24,14 +24,13 @@
 				}
 			}
 		}
-		/*	background-image: map-get($map: $paletadefondos,$key:'uno');*/
 	}
 	//discografia//
 	.contenedor__grid--disco{
 		@include grid (grid,100%, 100vh, 1, 0);	
 		grid-template-areas:
 		"nav" "header" "main" "footer";
-		/*background-image: map-get($map: $paletadefondos,$key:'dos');*/
+	
 	}
 	//galeria//
 	.contenedor__grid--galeria{
@@ -82,8 +81,7 @@
 			display: inline-block;
 			align-content: center;
 			justify-content: center;
-			alignment-baseline: central;
-			
+			alignment-baseline: central;	
 		}
 		.contenedor__grid {
 			@include grid (grid,100%, 100vh, 1, 0px);	
@@ -117,56 +115,57 @@
 			"main main main main" "footer footer footer footer";	
 			.w-100 {
 				height: 400px;}
+				object-fit: cover;
 			}
 			
-		//TOUR//
-		.contenedor__grid--tour{
-			@include grid (grid,100%, 100vh, 2,7px );
-			grid-template-rows:7% auto 10% ;
-			grid-template-areas: 
-			"nav nav " 
-			" main header"
-			"footer footer";
-			h1{
-				font-size: 4rem;
-				margin:4rem;
+			//TOUR//
+			.contenedor__grid--tour{
+				@include grid (grid,100%, 100vh, 2,7px );
+				grid-template-rows:7% auto 10% ;
+				grid-template-areas: 
+				"nav nav " 
+				" main header"
+				"footer footer";
+				h1{
+					font-size: 4rem;
+					margin:4rem;
+				}
+
 			}
+			//CONTACTO//
+			.contenedor__grid--contactos{
+				@include grid (grid,100vw, 100vh, 2, 7px);
+				grid-template-areas: 
+				"nav nav " 
+				"header header" 
+				"main main" 
+				"aside aside"
+				"footer footer";
+				#form {
+					width:80vw;
+				}
 
+			}
 		}
-	//CONTACTO//
-	.contenedor__grid--contactos{
-		@include grid (grid,100vw, 100vh, 2, 7px);
-		grid-template-areas: 
-		"nav nav " 
-		"header header" 
-		"main main" 
-		"aside aside"
-		"footer footer";
-		#form {
-			width:80vw;
-		}
-		
-	}
-}
 
-/*media queries 1024 HOME*/
-@media(min-width: 1024px) 
-{
-	.contenedor__grid {
+		/*media queries 1024 HOME*/
+		@media(min-width: 1024px) 
+		{
+			.contenedor__grid {
 
-	}
-//CONTACTS//
-.contenedor__grid--contactos{
-	@include grid (grid,100vw, 100vh, 2, 9px);
-	grid-template-areas: 
-	"nav nav"
-	"header header"
-	"main aside"
-	"footer footer";
-	#form {
-		width:45vw;
-	}
-}
+			}
+			//CONTACTS//
+			.contenedor__grid--contactos{
+				@include grid (grid,100vw, 100vh, 2, 9px);
+				grid-template-areas: 
+				"nav nav"
+				"header header"
+				"main aside"
+				"footer footer";
+				#form {
+					width:45vw;
+				}
+			}
 			//TOUR//
 			.contenedor__grid--tour{
 				grid-template-areas: 
@@ -190,16 +189,16 @@
 				}
 			}
 			
-		//discografia//
-		.contenedor__grid--disco{
-			grid-template-columns:repeat(3, 1fr);
-			grid-template-areas: 
-			"nav nav nav"
-			"header header header"
-			"main main main"
-			"footer footer footer footer";
+			//discografia//
+			.contenedor__grid--disco{
+				grid-template-columns:repeat(3, 1fr);
+				grid-template-areas: 
+				"nav nav nav"
+				"header header header"
+				"main main main"
+				"footer footer footer footer";
+			}
 		}
-	}
 
 
-	
+

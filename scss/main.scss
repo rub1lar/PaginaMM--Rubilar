@@ -37,6 +37,7 @@ aside img {
 header img{
 	width: 100%;
 	height: 100%;
+	padding:2rem;
 	border-bottom-right-radius:25px;
 	border-bottom-left-radius:25px;
 	object-fit: cover;}
@@ -148,15 +149,11 @@ header img{
 			padding:0.5rem;
 		}
 	}
-	
+	//ID DE TAMAÑO H1 EN PANTALLA DE ERROR404//
 	#cuatro{
 			font-size: 14rem;
 		
 	}
-
-
-
-
 
 	.text-left{
 		text-align: left;
@@ -164,8 +161,6 @@ header img{
 	.text-right{
 		text-align: right;
 	}
-	
-
 //---------tipos de flexs---------//
 .flex {
 	@include flex (flex, space-around, center , center ,columns, wrap);
@@ -178,8 +173,6 @@ header img{
 	@include flex (flex, space-around , center, center,columns, wrap);
 	flex-direction: column;
 }
-
-
 //id areas del grid//
 #nav {
 	grid-area: nav;
@@ -199,7 +192,7 @@ header img{
 }
 //margen del carrusel//
 .carousel{
-	margin: 4rem;
+	margin: 3rem;
 }
 
 //------botones-----//
@@ -250,56 +243,7 @@ header img{
 		filter: brightness(170%);
 	}
 }
-//boton hamburguesa color //
 
-//fin de botones//
-
-//------------pagina 404--------------//
-
-/*.contenedor{
-	top: 50%;
-	position:absolute;
-	width: 100vw;
-	text-align: center;
-	.error4{
-		width: 50%;
-		background-color: rgba(40,29, 123, .5);
-		font-family: 'Press Start 2P', cursive;
-		border-radius:14px;
-	}
-
-	.texto404{
-		font-size: $letra__supergrande;
-	}
-	.boton-404{
-		background-color: darkblue;
-		color: white;
-		border-color: black;
-		border: solid;
-	}
-	}*/
-// fin de pagina 404///()
-.body404{
-	height: 100vh;
-	display: flex;
-	align-items:center;
-	justify-content: center;
-	background-image: url("../img/gig.webp") ;
-	background-size: contain;}
-	.container404{
-		border-radius: 15px;
-		text-align: center;
-		width: 100%;
-		max-width: 500px;
-		padding:20px;
-		background:$color__nav_footer}
-	
-		.boton-404{
-			background-color: #0F0F0FFF;
-			color: $color__blanco;
-			border-color: $color__negro;
-			border: solid;
-		}
 //caja de formulario en contactos//
 .contenedor_contactos-fondo{
 	margin:1rem;
@@ -315,7 +259,6 @@ header img{
 	@extend .contenedor_contactos-fondo;
 	background-color:rgba(0, 3, 4, .9);
 	width: 94%;
-
 }
 //contenedor de imagen marilyn manson en tour//
 .contenedor__img--tour{
@@ -370,13 +313,15 @@ header img{
 	padding-top: 0px;
 	height: 0;
 	overflow: hidden;
-}
-
-.video-contenedor iframe {
+		iframe {
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
 }
+
+
+}
+
 ///////////////////////
