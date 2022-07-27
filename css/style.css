@@ -298,7 +298,6 @@ footer {
   footer h5 {
     font-size: 1.2rem;
     color: #D9DBDE;
-    animation: animation 5s linear infinite;
     padding: 0.5rem 0.5rem 0.5rem 0.5rem; }
   footer article img {
     filter: brightness(80%);
